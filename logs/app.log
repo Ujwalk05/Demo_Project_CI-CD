@@ -1,0 +1,10 @@
+2025-09-01 03:50:28 [main] INFO  com.winmore.utils.Log - ✅ Browser launched successfully.
+2025-09-01 03:50:28 [main] INFO  com.winmore.utils.Log - 🚀 Starting Scenario Execution...
+2025-09-01 03:50:28 [main] INFO  com.winmore.utils.Log - 🌍 Launching Winmore app on environment [napreprod] at: https://login-napreprod.lanetixstaging.com/
+2025-09-01 03:50:33 [main] INFO  com.winmore.utils.Log - ✅ Application URL launched successfully.
+2025-09-01 03:50:35 [main] INFO  com.winmore.utils.Log - ✅ Verified presence of login screen successfully.
+2025-09-01 03:50:35 [main] INFO  com.winmore.utils.Log - 🏁 Scenario Execution Finished.
+2025-09-01 03:50:35 [main] INFO  com.winmore.utils.Log - 🚀 Starting Scenario Execution...
+2025-09-01 03:51:10 [main] INFO  com.winmore.utils.Log - 🏁 Scenario Execution Finished.
+2025-09-01 03:51:11 [main] INFO  com.winmore.utils.Log - 🚀 Starting Scenario Execution...
+2025-09-01 03:51:45 [main] INFO  com.winmore.utils.Log - 🏁 Scenario Execution Finished.

@@ -1,0 +1,16 @@
+com\winmore\utils\TestEnvironmentData.class
+com\winmore\utils\CommonUtils.class
+com\winmore\testingdata\PropertyDataHandler.class
+com\winmore\testingdata\ExcelDataHandler.class
+com\winmore\utils\Log.class
+com\winmore\actions\ClickActionHelper.class
+com\winmore\actions\UtilityActionHelper.class
+com\winmore\utils\PlaywrightDriver.class
+com\winmore\actions\InputActionHelper.class
+com\winmore\exceptions\AutomationException.class
+com\winmore\testactions\EmailReport.class
+com\winmore\testactions\TestSummary.class
+com\winmore\testactions\EmailReport$1.class
+com\winmore\actions\ValidationActionHelper.class
+com\winmore\testingdata\ExcelDataHandler$1.class
+com\winmore\base\TestBase.class

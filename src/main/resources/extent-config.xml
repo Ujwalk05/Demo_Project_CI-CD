@@ -1,0 +1,8 @@
+<extentreports>
+    <configuration>
+        <reportName>Automation Report</reportName>
+        <encoding>UTF-8</encoding>
+        <theme>dark</theme>
+        <protocol>https</protocol>
+    </configuration>
+</extentreports>

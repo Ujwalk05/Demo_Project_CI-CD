@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="AutomationSuite" verbose="1" parallel="false">
+
+    <!-- set env param here -->
+   <parameter name="environment" value="napreprod" />
+   <parameter name="cucumber.filter.tags" value="@QuickCreate" />
+
+    <test name="CucumberTests">
+        <classes>
+            <!-- point to your cucumber runner -->
+            <class name="com.winmore.runner.Test_Runner"/>
+        </classes>
+    </test>
+</suite>
