@@ -1,4 +1,4 @@
-@QuickCreate @SmokeSet1
+@QuickCreate @SmokeSet2
 Feature: Quick Create related testing
 
 Scenario: Launching the app
@@ -14,9 +14,14 @@ Scenario: Login into the app
 	
 Scenario: User checking the schedule activity creation
 	Given the user navigating to the "Quick Create" option in homepage
-	#Then the user selecting "Schedule Activity" option from Quick Create list
-	#And the user verifying that the "Schedule" activity screen in quick create is opened
-	#Then the user adding details in Activity Qucik Create screen
-	#And the user selecting the "Quick Create Save" button
-	#Then the user verifying the Activity creation completion
+	Then the user selecting "Schedule Activity" option from Quick Create list
+	And the user verifying that the "Schedule" activity screen in quick create is opened
+	Then the user adding details in Activity Quick Create screen
+	And the user selecting the "Quick Create Save" button
+	Then the user verifying the Activity creation completion
+	
+Scenario: User logging out from the app
+	Given the user navigating to the "Profile Image" option
+	Then the user selecting the "Logout" button
+	And the user verifying the presence of login page
 	

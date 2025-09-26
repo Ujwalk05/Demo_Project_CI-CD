@@ -1,4 +1,4 @@
-@Login @SmokeSet1 @PlaywrightSmokeSet1
+@Login @SmokeSet2 @PlaywrightSmokeSet1
 Feature: Login related testing
 
   Scenario: Launching the app

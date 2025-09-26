@@ -1,4 +1,4 @@
-@ExtensionPart2 @AutoExportDoc
+@ExtensionPart2 @SmokeSet2 @AutoExportDoc
 Feature: Extension Auto Export Doc related testing
 
   Scenario: Launching the app
@@ -16,4 +16,9 @@ Feature: Extension Auto Export Doc related testing
     Given the user selecting the "Browse" tab
     Then the user navigating to the "Aggregate Shipments" option in browse
     And the user selecting the "Create Record" button
+    
+  Scenario: User logging out from the app
+	Given the user navigating to the "Profile Image" option
+	Then the user selecting the "Logout" button
+	And the user verifying the presence of login page
     

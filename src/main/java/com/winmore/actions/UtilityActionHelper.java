@@ -1,5 +1,8 @@
 package com.winmore.actions;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.TimeoutError;
 import com.microsoft.playwright.options.LoadState;
@@ -60,4 +63,11 @@ public class UtilityActionHelper {
             throw e; // Re-throw the exception to fail the test
         }
     }
+    
+    public String getRandomStringUsingDateAndTime() {
+		DateFormat dateFormat = new SimpleDateFormat("ddMMyyHHmmss");
+		Date date = new Date();
+		String filePathdate = dateFormat.format(date).toString();
+		return filePathdate;
+	}
 }

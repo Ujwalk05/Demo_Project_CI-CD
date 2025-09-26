@@ -1,13 +1,13 @@
 com\winmore\pageinitializer\PageInitializer.class
-com\winmore\stepImplementations\LoginStepsImpl.class
 com\winmore\pages\QuickCreatePage.class
 com\winmore\stepdefinitions\extensions\Extensions_AutoExportDocSteps.class
 com\winmore\pages\HomePage.class
 com\winmore\stepdefinitions\home\HomeSteps.class
+com\winmore\stepdefinitions\home\OceanPricingSteps.class
 com\winmore\pages\LoginPage.class
+com\winmore\stepdefinitions\home\CreateRecordSteps.class
 com\winmore\stepdefinitions\quickcreate\QuickCreateSteps.class
 com\winmore\pages\ExtensionsPage.class
 com\winmore\stepdefinitions\login\LoginSteps.class
 com\winmore\runner\Test_Runner.class
-com\winmore\stepImplementations\Extensions_AutoExportDocStepsImpl.class
 com\winmore\hooks\Hooks.class

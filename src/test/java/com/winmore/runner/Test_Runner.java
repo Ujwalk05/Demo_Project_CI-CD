@@ -24,7 +24,8 @@ import io.cucumber.testng.CucumberOptions;
                 "pretty",
                 "html:target/cucumber-reports/cucumber-html-report.html",
                 "json:target/cucumber-reports/cucumber-json-report.json",
-                "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
+                //"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
+                "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:Reports/",
         }, monochrome = true)
 public class Test_Runner extends AbstractTestNGCucumberTests {
 	
@@ -80,7 +81,7 @@ public class Test_Runner extends AbstractTestNGCucumberTests {
 		
 	    TestBase.environment = environment;
 	    TestBase.maillist = mailRecipients;
-	    System.out.println("Mail Recipients (from TestNG): " + TestBase.maillist);
+	    System.out.println("Mail RecipienRets (from TestNG): " + TestBase.maillist);
 	    
 	 // ✅ Log final values to confirm
 	    //System.out.println("🔧 Final Environment: " + TestEnvironmentData.getEnv());

@@ -1,8 +1,6 @@
 package com.winmore.stepdefinitions.extensions;
 
 import com.winmore.pageinitializer.PageInitializer;
-import com.winmore.stepImplementations.Extensions_AutoExportDocStepsImpl;
-
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 
@@ -10,7 +8,9 @@ public class Extensions_AutoExportDocSteps extends PageInitializer{
 	
 	@Given("the user selecting the {string} tab")
 	public void the_user_selecting_the_tab(String optionName) {
-		Extensions_AutoExportDocStepsImpl.clickBrowseTab();
+		actionHelper.waitForElementToBeVisible(extensionsPage.browseButton);
+		clickHelper.click(extensionsPage.browseButton);
+		commonUtils.sleep(4000);
 	}
 	
 	@Then("the user navigating to the {string} option in browse")
@@ -30,8 +30,8 @@ public class Extensions_AutoExportDocSteps extends PageInitializer{
 	    
 	}
 
-	@Given("the user moving to the record from record creation success screen")
-	public void the_user_moving_to_the_record_from_record_creation_success_screen() {
+	@Given("the user moving to the record from record creation success screen1")
+	public void the_user_moving_to_the_record_from_record_creation_success_screen1() {
 	    
 	}
 

@@ -4,5 +4,9 @@
         <encoding>UTF-8</encoding>
         <theme>dark</theme>
         <protocol>https</protocol>
+        
+        <categories>
+        <displayTestCategory>true</displayTestCategory>
+    </categories>
     </configuration>
 </extentreports>
