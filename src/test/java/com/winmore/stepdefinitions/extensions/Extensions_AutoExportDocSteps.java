@@ -6,16 +6,10 @@ import io.cucumber.java.en.Then;
 
 public class Extensions_AutoExportDocSteps extends PageInitializer{
 	
-	@Given("the user selecting the {string} tab")
-	public void the_user_selecting_the_tab(String optionName) {
-		actionHelper.waitForElementToBeVisible(extensionsPage.browseButton);
-		clickHelper.click(extensionsPage.browseButton);
-		commonUtils.sleep(4000);
-	}
-	
 	@Then("the user navigating to the {string} option in browse")
-	public void the_user_navigating_to_the_option_in_browse(String string) {
-		clickHelper.click("//a[contains(text(),'Aggregate Shipments')][1]");
+	public void the_user_navigating_to_the_option_in_browse(String option) {
+		String shipperimportbutton = String.format(homePage.aggregateShipment, option);
+		clickHelper.click(shipperimportbutton);
 		commonUtils.sleep(40000);
 		
 	}

@@ -1,4 +1,4 @@
-@RateAI @PISelectedDownload @RegressionSet5
+@RateAI @PISelectedDownload @RegressionSet1 @SmokeSet1
 Feature: RateAI_ PI Selected download from record related test cases 
 
 Scenario: Launching the app
@@ -31,10 +31,11 @@ Scenario: User navigating to the Ocean Pricing page in template screen
 	
 Scenario: User Uploading the shipper file 
 	Given the user selecting the "Import File" button in the opean pricing page
-	Then the user uploading the shipper file "KimberlyClark_FormulaCheckFile" in Price Import screen 
+	Then the user uploading the shipper file "KimberlyClark_FormulaCheckFile.xlsx" in Price Import screen 
 	And the user clicking the "Import" button 
 	Then the user verifying that the Header row prediction is "4" 
 	And the user clicking the "Proceed" button
+	And the user clicking the "CloseSubmissionButton" button
 	
 Scenario: User logging out from the app
 	Given the user navigating to the "Profile Image" option

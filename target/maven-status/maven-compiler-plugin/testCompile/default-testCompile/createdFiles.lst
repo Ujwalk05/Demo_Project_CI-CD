@@ -1,3 +1,4 @@
+com\winmore\pages\OceanPricingPage.class
 com\winmore\pageinitializer\PageInitializer.class
 com\winmore\pages\QuickCreatePage.class
 com\winmore\stepdefinitions\extensions\Extensions_AutoExportDocSteps.class

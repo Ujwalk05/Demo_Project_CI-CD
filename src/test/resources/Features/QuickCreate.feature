@@ -1,4 +1,4 @@
-@QuickCreate @SmokeSet2
+@QuickCreate @SmokeSet1 @RegressionSet1
 Feature: Quick Create related testing
 
 Scenario: Launching the app

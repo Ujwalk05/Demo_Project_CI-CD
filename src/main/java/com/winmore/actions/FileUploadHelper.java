@@ -1,7 +1,8 @@
 package com.winmore.actions;
 
+import java.nio.file.Path;
 import java.nio.file.Paths;
-
+import com.microsoft.playwright.FileChooser;
 import com.microsoft.playwright.Page;
 import com.winmore.exceptions.AutomationException;
 import com.winmore.utils.PlaywrightDriver;
@@ -33,6 +34,24 @@ public class FileUploadHelper {
 	    }
 	    return uploaded;
 	}
+	
+	public void uploadAndSetFile(String fileName, String locator) {
+        try {
+            Path filePath = Paths.get(System.getProperty("user.dir"), "/src/test/resources/ExcelData/", fileName);
+
+            FileChooser fileChooser = page.waitForFileChooser(() -> {
+                page.locator(locator).click();
+            });
+
+            fileChooser.setFiles(filePath);
+
+            page.waitForLoadState();
+            System.out.println("✅ File uploaded successfully: " + fileName);
+
+        } catch (Exception e) {
+            throw new RuntimeException("❌ File upload failed for: " + fileName, e);
+        }
+    }
 
 
 }

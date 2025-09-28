@@ -1,4 +1,4 @@
-@CreateRecord @SmokeSet2 @PlaywrightSmokeSet2
+@CreateRecord @SmokeSet1 @RegressionSet1
 Feature: Login related testing
 
   Scenario: Launching the app
@@ -13,7 +13,7 @@ Feature: Login related testing
 	Then the user verifying the successful login
 	Then the user verifying the title of the homepage
 	
-  Scenario: User creating a record
+  Scenario: User is creating a record
     Given the user selecting the "Browse" tab
     Then the user navigating to the RateAIAutos option
     And the user selecting the Create Record button

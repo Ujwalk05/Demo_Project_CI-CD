@@ -1,7 +1,6 @@
 package com.winmore.stepdefinitions.login;
 
 import java.util.List;
-
 import org.testng.Assert;
 import org.apache.logging.log4j.LogManager;
 import com.winmore.pageinitializer.PageInitializer;
@@ -14,28 +13,26 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 
 public class LoginSteps extends PageInitializer{
-	
+
 	public static Logger log = LogManager.getLogger(LoginSteps.class);
-	
+
 	@Given("^the user navigates to \"([^\"]*)\" application$")
 	public void the_user_navigates_to(String appName) throws Throwable {
 		if (appName.equalsIgnoreCase("Winmore")) {
-	    	String env = TestEnvironmentData.getEnv();
-	    	String baseURL = TestEnvironmentData.getTestDataBasedOnEnvironment("WinmoreBaseURl");
-	        System.out.println("🌍 Launching " + appName + " app on environment [" + env + "] at: " + baseURL);
-	        Log.info("🌍 Launching " + appName + " app on environment [" + env + "] at: " + baseURL);
-	        PlaywrightDriver.openPage(baseURL);
-	        actionHelper.waitForAngular();
-	        actionHelper.waitForNetworkIdle();
-	        actionHelper.waitForPageLoad();
-	        System.out.println("Launching app URL");
-	        Log.info("✅ Application URL launched successfully.");
-	    } else {
-	        System.out.println("❌ Please provide a valid app name, got: " + appName);
-	        Log.error("❌ Invalid app name provided: " + appName);
-	    }
+			String env = TestEnvironmentData.getEnv();
+			String baseURL = TestEnvironmentData.getTestDataBasedOnEnvironment("WinmoreBaseURl");
+			Log.info("🌍 Launching " + appName + " app on environment [" + env + "] at: " + baseURL);
+			PlaywrightDriver.openPage(baseURL);
+			actionHelper.waitForAngular();
+			actionHelper.waitForNetworkIdle();
+			actionHelper.waitForPageLoad();
+			Log.info("✅ Application URL launched successfully.");
+		} else {
+			System.out.println("❌ Please provide a valid app name, got: " + appName);
+			Log.error("❌ Invalid app name provided: " + appName);
+		}
 	}
-	
+
 	@Then("^the user verifying the presence of login page$")
 	public void verifyThePresenceOFLoginScreen() throws Throwable {
 		commonUtils.sleep(2000);
@@ -43,7 +40,7 @@ public class LoginSteps extends PageInitializer{
 		Assert.assertEquals(true, SignInBtnPresence);
 		Log.info("✅ Verified presence of login screen successfully.");
 	}
-	
+
 	@Given("the user logging into the app")
 	public void the_user_logging_into_the_app(DataTable tablevalue) {
 		List<List<String>> data = tablevalue.asLists(String.class);
@@ -52,70 +49,89 @@ public class LoginSteps extends PageInitializer{
 		inputHelper.type(loginPage.email, Email);
 		inputHelper.type(loginPage.password, Password);
 		clickHelper.click(loginPage.sighInButton);
+		Log.info("User entered the login credentials successfully.");
 	}
 
 	@Given("the user selecting the Organization {string}")
-	public void the_user_selecting_the_organization(String string) {
+	public void the_user_selecting_the_organization(String organisation) {
 		actionHelper.waitForElementToBeVisible(loginPage.selectOrgElement);
 		if (validationHelper.isElementPresent(loginPage.selectOrgElement)) {
-			clickHelper.click(loginPage.engineeringAutomation);
+			
+			switch (organisation) {
+			case "Engineering Automation":
+				clickHelper.click(loginPage.engineeringAutomation);
+				break;
+
+			case "Automating Extension":
+				clickHelper.click(loginPage.automationExtension);
+				break;
+
+			default:
+				throw new IllegalArgumentException("❌ Unknown button: " + organisation);
+				
+			}
+			Log.info("✅ Verified the selection of organization successfully.");
 		} else {
 			System.out.println("<<<<< Org selection screen isn't shown for this user >>>>>");
-			 Log.error("<<<<< Org selection screen isn't shown for this user >>>>>");
+			Log.error("<<<<< Org selection screen isn't shown for this user >>>>>");
 		}
 	}
 
 	@Then("the user verifying the successful login")
 	public void the_user_verifying_the_successful_login() {
-		commonUtils.sleep(5000);
 		actionHelper.waitForElementToBeVisible(loginPage.userProfileImage);
 		commonUtils.sleep(5000);
 		boolean UserProfileImage = validationHelper.isElementPresent(loginPage.userProfileImage);
 		Assert.assertEquals(true, UserProfileImage);
 		Log.info("✅ Login is successful in the application");
 	}
-	
+
 	@Then("the user verifying the title of the homepage")
 	public void the_user_verifying_the_title_of_the_homepage() {
-		String title = validationHelper.getPageTitle();
-		Assert.assertEquals("Winmore", title);
+		Assert.assertEquals("Winmore", validationHelper.getPageTitle());
 		Log.info("✅ Verified the title of the page after login");
 	}
 
 	@Given("the user navigating to the {string} option")
-	public void the_user_navigating_to_the_option(String string) {
-		if(string.equals(string)) {
+	public void the_user_navigating_to_the_option(String option) {
+		if (option.equalsIgnoreCase("Profile Image")) {
 			clickHelper.click(loginPage.userProfileImage);
-		}else {
-			clickHelper.click(loginPage.userProfileImage);
+		} else if (option.equalsIgnoreCase("Logout")) {
+			clickHelper.click(loginPage.logoutButton);
+		} else {
+			throw new IllegalArgumentException("Unsupported option: " + option);
 		}
 	}
 
 	@Then("the user selecting the {string} button")
 	public void the_user_selecting_the_button(String buttonName) throws InterruptedException {
 		switch (buttonName) {
-        case "Logout":
-        	clickHelper.click(loginPage.logoutButton);
-            break;
-            
-        case "Close":
-        	clickHelper.click(homePage.closeButton);
-            break;
-            
-        case "Quick Create Save":
-        	clickHelper.click("//span[contains(text(),'Save')]");
-            break;
-            
-        case "Create Record":
-        	clickHelper.click("//span[@class='-u-btn__content']//span[contains(text(),'Create Record')]");
-            break;
-            
-        default:
-            throw new IllegalArgumentException("❌ Unknown button: " + buttonName);
-            
-    }
-	//clickHelper.click(loginPage.logoutButton);
-	Log.info("✅ User logged out from the application successfully");
+		case "Logout":
+			clickHelper.click(loginPage.logoutButton);
+			break;
+
+		case "Close":
+			clickHelper.click(homePage.closeButton);
+			break;
+
+		case "Quick Create Save":
+			clickHelper.click(quickCreatePage.saveQuickCreate);
+			break;
+
+		case "Create Record":
+			clickHelper.click(homePage.createRecord);
+			break;
+			
+		case "Cancel & Back":
+			clickHelper.click(homePage.cancelAndBack);
+			break;
+
+		default:
+			throw new IllegalArgumentException("❌ Unknown button: " + buttonName);
+
+		}
+		//clickHelper.click(loginPage.logoutButton);
+		Log.info("✅ User logged out from the application successfully");
 		commonUtils.sleep(4000);
 	}
 
