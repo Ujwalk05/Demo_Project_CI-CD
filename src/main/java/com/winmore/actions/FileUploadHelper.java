@@ -52,6 +52,26 @@ public class FileUploadHelper {
             throw new RuntimeException("❌ File upload failed for: " + fileName, e);
         }
     }
+	
+	public void uploadAndSetFileInFolder(String folderName, String fileName, String locator) {
+        try {
+            //Path filePath = Paths.get(System.getProperty("user.dir"), "/src/test/resources/ExcelData/", fileName);
+
+            Path filePath = Paths.get(System.getProperty("user.dir"), "src", "test", "resources", folderName, fileName);
+			
+            FileChooser fileChooser = page.waitForFileChooser(() -> {
+                page.locator(locator).click();
+            });
+
+            fileChooser.setFiles(filePath);
+
+            page.waitForLoadState();
+            System.out.println("✅ File uploaded successfully: " + fileName);
+
+        } catch (Exception e) {
+            throw new RuntimeException("❌ File upload failed for: " + fileName, e);
+        }
+    }
 
 
 }

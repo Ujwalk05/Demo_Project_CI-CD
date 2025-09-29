@@ -19,6 +19,9 @@ public class LoginPage{
 	
 	public String automationExtension = "//li[@class='organization']//button//span[contains(text(),'Automating Extension')]";
 	public String automationExtension_Description = "Automation Extension organization option";
+	
+	public String OrganizationSelection_RateAIAutomationBtn = "//li[@class='organization']//button//span[contains(text(),'RateAI Automation')]";
+	public String OrganizationSelection_RateAIAutomationBtn_description = "Button for RateAI Automation org";
 
 	public String userProfileImage = "//div[contains(@class, 'nav-header__button') and contains(@class, 'nav-header__button--avatar')]//div[contains(@class, '-u-avatar') and contains(@class, '-u-avatar--initials')]";
 	public String userProfileImage_Description = "User profile avatar image/button";

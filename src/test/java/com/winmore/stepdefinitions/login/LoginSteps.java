@@ -65,6 +65,10 @@ public class LoginSteps extends PageInitializer{
 			case "Automating Extension":
 				clickHelper.click(loginPage.automationExtension);
 				break;
+				
+			case "RateAI CurrencyAndFormula Automation":
+				clickHelper.click(loginPage.OrganizationSelection_RateAIAutomationBtn);
+				break;
 
 			default:
 				throw new IllegalArgumentException("❌ Unknown button: " + organisation);

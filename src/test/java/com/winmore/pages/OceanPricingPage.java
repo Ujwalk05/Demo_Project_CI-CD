@@ -4,7 +4,13 @@ public class OceanPricingPage {
 	
 	public String rowNumber = "//input[@placeholder='Enter row number here']";
 	public String rowNumber_Description = "Input field to enter row number";
+	
+	public String errorMessageForFile = "//div[.='File should be in XLS, XLSX, XLSM or XLSB format.']";
+	public String errorMessageForFile_Description = "Error message on uploading non-supporting files";
 
+	public String okButton = "//button[.='%s']";
+	public String okButton_Description = "OK Button";
+	
 	public String enterRowNumber = "//tr[@class='client-components-table-renderer-components-modal-upload-pricing-component-sheet-selection-__sheet-selection-module__selected']//input[@placeholder='Enter row number here']/..//input";
 	public String enterRowNumber_Description = "Row number input field inside selected sheet row";
 

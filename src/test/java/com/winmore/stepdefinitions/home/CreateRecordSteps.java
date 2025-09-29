@@ -26,6 +26,13 @@ public class CreateRecordSteps extends PageInitializer{
 		clickHelper.click(homePage.rateAIAutos);
 		Log.info("✅ User navigated to RateAIAutos option successfully");
 	}
+	
+	@Then("the user navigating to the RateAILatest option")
+	public void the_user_navigating_to_the_rate_ai_latest_option() {
+		actionHelper.waitForElementToBeVisible(homePage.rateAILatest);
+		clickHelper.click(homePage.rateAILatest);
+		Log.info("✅ User navigated to RateAIAutos option successfully");
+	}
 
 	@Then("the user selecting the Create Record button")
 	public void the_user_selecting_the_create_record_button() {

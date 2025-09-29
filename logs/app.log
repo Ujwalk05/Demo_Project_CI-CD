@@ -1,111 +1,28 @@
-2025-09-29 02:40:30 [main] INFO  com.winmore.utils.Log - ✅ Browser launched successfully.
-2025-09-29 02:40:30 [main] INFO  com.winmore.utils.Log - 🚀 Starting Scenario Execution...
-2025-09-29 02:40:30 [main] INFO  com.winmore.utils.Log - 🌍 Launching Winmore app on environment [napreprod] at: https://login-napreprod.lanetixstaging.com/
-2025-09-29 02:40:41 [main] INFO  com.winmore.utils.Log - ✅ Application URL launched successfully.
-2025-09-29 02:40:44 [main] INFO  com.winmore.utils.Log - ✅ Verified presence of login screen successfully.
-2025-09-29 02:40:44 [main] INFO  com.winmore.utils.Log - 🏁 Scenario Execution Finished.
-2025-09-29 02:40:44 [main] INFO  com.winmore.utils.Log - 🚀 Starting Scenario Execution...
-2025-09-29 02:40:44 [main] INFO  com.winmore.utils.Log - User entered the login credentials successfully.
-2025-09-29 02:41:00 [main] INFO  com.winmore.utils.Log - ✅ Login is successful in the application
-2025-09-29 02:41:00 [main] INFO  com.winmore.utils.Log - 🏁 Scenario Execution Finished.
-2025-09-29 02:41:00 [main] INFO  com.winmore.utils.Log - 🚀 Starting Scenario Execution...
-2025-09-29 02:41:04 [main] INFO  com.winmore.utils.Log - ✅ User clicked on browse successfully
-2025-09-29 02:41:04 [main] INFO  com.winmore.utils.Log - ✅ User navigated to RateAIAutos option successfully
-2025-09-29 02:41:06 [main] INFO  com.winmore.utils.Log - ✅ User clicked on create record button successfully
-2025-09-29 02:41:13 [main] INFO  com.winmore.utils.Log - ✅ User verified the presence of record creation success successfully
-2025-09-29 02:41:13 [main] INFO  com.winmore.utils.Log - 🏁 Scenario Execution Finished.
-2025-09-29 02:41:13 [main] INFO  com.winmore.utils.Log - 🚀 Starting Scenario Execution...
-2025-09-29 02:41:19 [main] INFO  com.winmore.utils.Log - ✅ User is on the created record screen
-2025-09-29 02:41:22 [main] INFO  com.winmore.utils.Log - ✅ User verified the Overview header in record screen successfully
-2025-09-29 02:41:22 [main] INFO  com.winmore.utils.Log - 🏁 Scenario Execution Finished.
-2025-09-29 02:41:22 [main] INFO  com.winmore.utils.Log - 🚀 Starting Scenario Execution...
-2025-09-29 02:41:22 [main] INFO  com.winmore.utils.Log - ✅ User verified the Ocean Pricing header in record screen successfully
-2025-09-29 02:41:22 [main] INFO  com.winmore.utils.Log - 🏁 Scenario Execution Finished.
-2025-09-29 02:41:22 [main] INFO  com.winmore.utils.Log - 🚀 Starting Scenario Execution...
-2025-09-29 02:41:23 [main] INFO  com.winmore.utils.Log - ✅ User clicked shipper import successfully
-2025-09-29 02:41:29 [main] INFO  com.winmore.utils.Log - ✅ User clicked the button successfully
-2025-09-29 02:41:43 [main] INFO  com.winmore.utils.Log - ✅ User clicked the button successfully
-2025-09-29 02:41:55 [main] INFO  com.winmore.utils.Log - ✅ User clicked the button successfully
-2025-09-29 02:41:59 [main] INFO  com.winmore.utils.Log - 🏁 Scenario Execution Finished.
-2025-09-29 02:41:59 [main] INFO  com.winmore.utils.Log - 🚀 Starting Scenario Execution...
-2025-09-29 02:42:01 [main] INFO  com.winmore.utils.Log - ✅ User logged out from the application successfully
-2025-09-29 02:42:07 [main] INFO  com.winmore.utils.Log - ✅ Verified presence of login screen successfully.
-2025-09-29 02:42:07 [main] INFO  com.winmore.utils.Log - 🏁 Scenario Execution Finished.
-2025-09-29 02:42:07 [main] INFO  com.winmore.utils.Log - 🚀 Starting Scenario Execution...
-2025-09-29 02:42:07 [main] INFO  com.winmore.utils.Log - 🌍 Launching Winmore app on environment [napreprod] at: https://login-napreprod.lanetixstaging.com/
-2025-09-29 02:42:09 [main] INFO  com.winmore.utils.Log - ✅ Application URL launched successfully.
-2025-09-29 02:42:11 [main] INFO  com.winmore.utils.Log - ✅ Verified presence of login screen successfully.
-2025-09-29 02:42:11 [main] INFO  com.winmore.utils.Log - 🏁 Scenario Execution Finished.
-2025-09-29 02:42:11 [main] INFO  com.winmore.utils.Log - 🚀 Starting Scenario Execution...
-2025-09-29 02:42:11 [main] INFO  com.winmore.utils.Log - User entered the login credentials successfully.
-2025-09-29 02:42:16 [main] INFO  com.winmore.utils.Log - ✅ Verified the selection of organization successfully.
-2025-09-29 02:42:26 [main] INFO  com.winmore.utils.Log - ✅ Login is successful in the application
-2025-09-29 02:42:26 [main] INFO  com.winmore.utils.Log - 🏁 Scenario Execution Finished.
-2025-09-29 02:42:26 [main] INFO  com.winmore.utils.Log - 🚀 Starting Scenario Execution...
-2025-09-29 02:42:30 [main] INFO  com.winmore.utils.Log - ✅ User clicked on browse successfully
-2025-09-29 02:43:10 [main] INFO  com.winmore.utils.Log - ✅ User logged out from the application successfully
-2025-09-29 02:43:14 [main] INFO  com.winmore.utils.Log - ✅ User logged out from the application successfully
-2025-09-29 02:43:18 [main] INFO  com.winmore.utils.Log - 🏁 Scenario Execution Finished.
-2025-09-29 02:43:18 [main] INFO  com.winmore.utils.Log - 🚀 Starting Scenario Execution...
-2025-09-29 02:43:20 [main] INFO  com.winmore.utils.Log - ✅ User logged out from the application successfully
-2025-09-29 02:43:26 [main] INFO  com.winmore.utils.Log - ✅ Verified presence of login screen successfully.
-2025-09-29 02:43:26 [main] INFO  com.winmore.utils.Log - 🏁 Scenario Execution Finished.
-2025-09-29 02:43:26 [main] INFO  com.winmore.utils.Log - 🚀 Starting Scenario Execution...
-2025-09-29 02:43:26 [main] INFO  com.winmore.utils.Log - 🌍 Launching Winmore app on environment [napreprod] at: https://login-napreprod.lanetixstaging.com/
-2025-09-29 02:43:28 [main] INFO  com.winmore.utils.Log - ✅ Application URL launched successfully.
-2025-09-29 02:43:30 [main] INFO  com.winmore.utils.Log - ✅ Verified presence of login screen successfully.
-2025-09-29 02:43:30 [main] INFO  com.winmore.utils.Log - 🏁 Scenario Execution Finished.
-2025-09-29 02:43:30 [main] INFO  com.winmore.utils.Log - 🚀 Starting Scenario Execution...
-2025-09-29 02:43:30 [main] INFO  com.winmore.utils.Log - User entered the login credentials successfully.
-2025-09-29 02:43:35 [main] INFO  com.winmore.utils.Log - ✅ Verified the selection of organization successfully.
-2025-09-29 02:43:44 [main] INFO  com.winmore.utils.Log - ✅ Login is successful in the application
-2025-09-29 02:43:44 [main] INFO  com.winmore.utils.Log - ✅ Verified the title of the page after login
-2025-09-29 02:43:44 [main] INFO  com.winmore.utils.Log - 🏁 Scenario Execution Finished.
-2025-09-29 02:43:44 [main] INFO  com.winmore.utils.Log - 🚀 Starting Scenario Execution...
-2025-09-29 02:43:48 [main] INFO  com.winmore.utils.Log - ✅ User clicked on browse successfully
-2025-09-29 02:43:48 [main] INFO  com.winmore.utils.Log - ✅ User navigated to RateAIAutos option successfully
-2025-09-29 02:43:50 [main] INFO  com.winmore.utils.Log - ✅ User clicked on create record button successfully
-2025-09-29 02:43:56 [main] INFO  com.winmore.utils.Log - ✅ User verified the presence of record creation success successfully
-2025-09-29 02:43:56 [main] INFO  com.winmore.utils.Log - 🏁 Scenario Execution Finished.
-2025-09-29 02:43:56 [main] INFO  com.winmore.utils.Log - 🚀 Starting Scenario Execution...
-2025-09-29 02:44:00 [main] INFO  com.winmore.utils.Log - ✅ User is on the created record screen
-2025-09-29 02:44:00 [main] INFO  com.winmore.utils.Log - 🏁 Scenario Execution Finished.
-2025-09-29 02:44:00 [main] INFO  com.winmore.utils.Log - 🚀 Starting Scenario Execution...
-2025-09-29 02:44:02 [main] INFO  com.winmore.utils.Log - ✅ User clicked on the settings gear button
-2025-09-29 02:44:07 [main] INFO  com.winmore.utils.Log - ✅ User deleted the created record successfully
-2025-09-29 02:44:07 [main] INFO  com.winmore.utils.Log - 🏁 Scenario Execution Finished.
-2025-09-29 02:44:07 [main] INFO  com.winmore.utils.Log - 🚀 Starting Scenario Execution...
-2025-09-29 02:44:09 [main] INFO  com.winmore.utils.Log - ✅ User logged out from the application successfully
-2025-09-29 02:44:15 [main] INFO  com.winmore.utils.Log - ✅ Verified presence of login screen successfully.
-2025-09-29 02:44:15 [main] INFO  com.winmore.utils.Log - 🏁 Scenario Execution Finished.
-2025-09-29 02:44:15 [main] INFO  com.winmore.utils.Log - 🚀 Starting Scenario Execution...
-2025-09-29 02:44:15 [main] INFO  com.winmore.utils.Log - 🌍 Launching Winmore app on environment [napreprod] at: https://login-napreprod.lanetixstaging.com/
-2025-09-29 02:44:17 [main] INFO  com.winmore.utils.Log - ✅ Application URL launched successfully.
-2025-09-29 02:44:19 [main] INFO  com.winmore.utils.Log - ✅ Verified presence of login screen successfully.
-2025-09-29 02:44:19 [main] INFO  com.winmore.utils.Log - 🏁 Scenario Execution Finished.
-2025-09-29 02:44:19 [main] INFO  com.winmore.utils.Log - 🚀 Starting Scenario Execution...
-2025-09-29 02:44:19 [main] INFO  com.winmore.utils.Log - User entered the login credentials successfully.
-2025-09-29 02:44:23 [main] INFO  com.winmore.utils.Log - ✅ Verified the selection of organization successfully.
-2025-09-29 02:44:32 [main] INFO  com.winmore.utils.Log - ✅ Login is successful in the application
-2025-09-29 02:44:32 [main] INFO  com.winmore.utils.Log - ✅ Verified the title of the page after login
-2025-09-29 02:44:32 [main] INFO  com.winmore.utils.Log - 🏁 Scenario Execution Finished.
-2025-09-29 02:44:32 [main] INFO  com.winmore.utils.Log - 🚀 Starting Scenario Execution...
-2025-09-29 02:44:34 [main] INFO  com.winmore.utils.Log - ✅ User logged out from the application successfully
-2025-09-29 02:44:40 [main] INFO  com.winmore.utils.Log - ✅ Verified presence of login screen successfully.
-2025-09-29 02:44:40 [main] INFO  com.winmore.utils.Log - 🏁 Scenario Execution Finished.
-2025-09-29 02:44:40 [main] INFO  com.winmore.utils.Log - 🚀 Starting Scenario Execution...
-2025-09-29 02:44:40 [main] INFO  com.winmore.utils.Log - 🌍 Launching Winmore app on environment [napreprod] at: https://login-napreprod.lanetixstaging.com/
-2025-09-29 02:44:42 [main] INFO  com.winmore.utils.Log - ✅ Application URL launched successfully.
-2025-09-29 02:44:44 [main] INFO  com.winmore.utils.Log - ✅ Verified presence of login screen successfully.
-2025-09-29 02:44:44 [main] INFO  com.winmore.utils.Log - 🏁 Scenario Execution Finished.
-2025-09-29 02:44:44 [main] INFO  com.winmore.utils.Log - 🚀 Starting Scenario Execution...
-2025-09-29 02:44:44 [main] INFO  com.winmore.utils.Log - User entered the login credentials successfully.
-2025-09-29 02:44:49 [main] INFO  com.winmore.utils.Log - ✅ Verified the selection of organization successfully.
-2025-09-29 02:44:58 [main] INFO  com.winmore.utils.Log - ✅ Login is successful in the application
-2025-09-29 02:44:58 [main] INFO  com.winmore.utils.Log - 🏁 Scenario Execution Finished.
-2025-09-29 02:44:58 [main] INFO  com.winmore.utils.Log - 🚀 Starting Scenario Execution...
-2025-09-29 02:44:58 [main] INFO  com.winmore.utils.Log - 🏁 Scenario Execution Finished.
-2025-09-29 02:44:58 [main] INFO  com.winmore.utils.Log - 🚀 Starting Scenario Execution...
-2025-09-29 02:45:00 [main] INFO  com.winmore.utils.Log - ✅ User logged out from the application successfully
-2025-09-29 02:45:06 [main] INFO  com.winmore.utils.Log - ✅ Verified presence of login screen successfully.
-2025-09-29 02:45:06 [main] INFO  com.winmore.utils.Log - 🏁 Scenario Execution Finished.
+2025-09-30 01:00:03 [main] INFO  com.winmore.utils.Log - ✅ Browser launched successfully.
+2025-09-30 01:00:03 [main] INFO  com.winmore.utils.Log - 🚀 Starting Scenario Execution...
+2025-09-30 01:00:04 [main] INFO  com.winmore.utils.Log - 🌍 Launching Winmore app on environment [napreprod] at: https://login-napreprod.lanetixstaging.com/
+2025-09-30 01:00:16 [main] INFO  com.winmore.utils.Log - ✅ Application URL launched successfully.
+2025-09-30 01:00:18 [main] INFO  com.winmore.utils.Log - ✅ Verified presence of login screen successfully.
+2025-09-30 01:00:18 [main] INFO  com.winmore.utils.Log - 🏁 Scenario Execution Finished.
+2025-09-30 01:00:19 [main] INFO  com.winmore.utils.Log - 🚀 Starting Scenario Execution...
+2025-09-30 01:00:19 [main] INFO  com.winmore.utils.Log - User entered the login credentials successfully.
+2025-09-30 01:00:24 [main] INFO  com.winmore.utils.Log - ✅ Verified the selection of organization successfully.
+2025-09-30 01:00:39 [main] INFO  com.winmore.utils.Log - ✅ Login is successful in the application
+2025-09-30 01:00:39 [main] INFO  com.winmore.utils.Log - 🏁 Scenario Execution Finished.
+2025-09-30 01:00:39 [main] INFO  com.winmore.utils.Log - 🚀 Starting Scenario Execution...
+2025-09-30 01:00:43 [main] INFO  com.winmore.utils.Log - ✅ User clicked on browse successfully
+2025-09-30 01:00:43 [main] INFO  com.winmore.utils.Log - ✅ User navigated to RateAIAutos option successfully
+2025-09-30 01:00:45 [main] INFO  com.winmore.utils.Log - ✅ User clicked on create record button successfully
+2025-09-30 01:00:52 [main] INFO  com.winmore.utils.Log - ✅ User verified the presence of record creation success successfully
+2025-09-30 01:00:52 [main] INFO  com.winmore.utils.Log - 🏁 Scenario Execution Finished.
+2025-09-30 01:00:52 [main] INFO  com.winmore.utils.Log - 🚀 Starting Scenario Execution...
+2025-09-30 01:00:58 [main] INFO  com.winmore.utils.Log - ✅ User is on the created record screen
+2025-09-30 01:00:58 [main] INFO  com.winmore.utils.Log - 🏁 Scenario Execution Finished.
+2025-09-30 01:00:58 [main] INFO  com.winmore.utils.Log - 🚀 Starting Scenario Execution...
+2025-09-30 01:01:01 [main] INFO  com.winmore.utils.Log - ✅ User verified the Ocean Pricing header in record screen successfully
+2025-09-30 01:01:01 [main] INFO  com.winmore.utils.Log - 🏁 Scenario Execution Finished.
+2025-09-30 01:01:01 [main] INFO  com.winmore.utils.Log - 🚀 Starting Scenario Execution...
+2025-09-30 01:01:02 [main] INFO  com.winmore.utils.Log - ✅ User clicked shipper import successfully
+2025-09-30 01:01:06 [main] INFO  com.winmore.utils.Log - 🏁 Scenario Execution Finished.
+2025-09-30 01:01:06 [main] INFO  com.winmore.utils.Log - 🚀 Starting Scenario Execution...
+2025-09-30 01:01:06 [main] INFO  com.winmore.utils.Log - 🏁 Scenario Execution Finished.

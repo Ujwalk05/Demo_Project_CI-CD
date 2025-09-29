@@ -11,6 +11,9 @@ public class HomePage {
 	public String rateAIAutos = "//a[normalize-space()='RateAIAutos']";
 	public String rateAIAutos_Description = "RateAIAutos button";
 	
+	public String rateAILatest = "//a[contains(text(),'RateAI Latest')][1]";
+	public String rateAILatest_Description = "RateAILatest button";
+	
 	public String closeButton = "//a[@class='site-nav-anchor icon icon-quicklaunch']";
 	public String closeButton_Description = "Close button in site navigation";
 	

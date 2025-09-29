@@ -23,6 +23,12 @@ public class OceanPricingSteps extends PageInitializer{
         commonUtils.sleep(2000);
 	}
 	
+	@Then("the user uploading the shipper file {string} from {string} folder in Price Import screen")
+	public void the_user_uploading_the_shipper_file_from_folder_in_price_import_screen(String fileName, String folderName) {
+		uploadHelper.uploadAndSetFileInFolder(folderName, fileName, pricingPage.fileUploadModal);
+		commonUtils.sleep(2000);
+	}
+	
 	@Then("the user clicking the {string} button")
 	public void the_user_clicking_the_button(String buttonName) {
 		commonUtils.sleep(2000);
@@ -64,6 +70,22 @@ public class OceanPricingSteps extends PageInitializer{
 	    presence = rowCountShowing.contains(expectedcount);
 	    Assert.assertTrue(presence, 
 	        "Header row count showing (" + rowCountShowing + ") is not matched with the expected (" + expectedcount + ")");
+	}
+	
+	@Then("the user verifying the presence of {string} template screen under ocean pricing")
+	public void the_user_verifying_the_presence_of_template_screen_under_ocean_pricing(String string) throws AutomationException {
+		boolean presence = false;
+		String screenPresence = validationHelper.getTrimmedText(pricingPage.errorMessageForFile);
+		presence = screenPresence.contains(string);
+		Assert.assertTrue(presence, 
+		        "File format error showing (" + screenPresence + ") ");
+	}
+
+	@Then("the user selecting the {string} button under ocean pricing")
+	public void the_user_selecting_the_button_under_ocean_pricing(String string) {
+		String okButton = String.format(pricingPage.okButton, string);
+		actionHelper.waitForElementToBeVisible(okButton);
+	    clickHelper.click(okButton);
 	}
 
 }
