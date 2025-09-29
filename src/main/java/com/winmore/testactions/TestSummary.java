@@ -8,10 +8,10 @@ public class TestSummary {
 	 static  int skippedTests;
 
     public TestSummary(int totalTests, int passedTests, int failedTests, int skippedTests) {
-        this.totalTests = totalTests;
-        this.passedTests = passedTests;
-        this.failedTests = failedTests;
-        this.skippedTests = skippedTests;
+        TestSummary.totalTests = totalTests;
+        TestSummary.passedTests = passedTests;
+        TestSummary.failedTests = failedTests;
+        TestSummary.skippedTests = skippedTests;
     }
 
     public static void incrementTotalTests() {

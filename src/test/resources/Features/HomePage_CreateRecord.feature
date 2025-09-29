@@ -1,5 +1,5 @@
 @CreateRecord @SmokeSet1 @RegressionSet1
-Feature: Login related testing
+Feature: Create Record and its deleting related testing
 
   Scenario: Launching the app
 	Given the user navigates to "Winmore" application

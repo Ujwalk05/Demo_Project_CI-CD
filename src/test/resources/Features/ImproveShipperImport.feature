@@ -1,5 +1,5 @@
 @ImproveShipperImport @SmokeSet1 @RegressionSet1
-Feature: Login related testing
+Feature: Verifying the Shipper Import
 
   Scenario: Launching the app
 	Given the user navigates to "Winmore" application

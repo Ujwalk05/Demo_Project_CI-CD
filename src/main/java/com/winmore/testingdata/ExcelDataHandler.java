@@ -7,7 +7,6 @@ import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.ss.util.CellRangeAddress;
@@ -629,10 +628,11 @@ public class ExcelDataHandler {
 		Path filePath = Paths.get(System.getProperty("user.dir"), "src", "test", "resources", folderName, fileName);
 		File file = filePath.toFile();
 		FileInputStream inputStream = new FileInputStream(file);
-		Workbook excelHandlingBook = new XSSFWorkbook(inputStream);
-		Sheet sheetDetails = excelHandlingBook.getSheet(sheetName);
-		inputStream.close();
-		return sheetDetails;
+		try (Workbook excelHandlingBook = new XSSFWorkbook(inputStream)) {
+			Sheet sheetDetails = excelHandlingBook.getSheet(sheetName);
+			inputStream.close();
+			return sheetDetails;
+		}
 	}
 
 	/**
@@ -848,10 +848,11 @@ public class ExcelDataHandler {
 		Path filePath = Paths.get(System.getProperty("user.dir"), "src", "test", "resources", folderName, fileName);
 		File file = filePath.toFile();
 		FileInputStream inputStream = new FileInputStream(file);
-		Workbook workbook = new XSSFWorkbook(inputStream);
-		Sheet sheetDetails = workbook.getSheetAt(0);
-		inputStream.close();
-		return sheetDetails;
+		try (Workbook workbook = new XSSFWorkbook(inputStream)) {
+			Sheet sheetDetails = workbook.getSheetAt(0);
+			inputStream.close();
+			return sheetDetails;
+		}
 	}
 
 	/**

@@ -2,7 +2,6 @@ package com.winmore.actions;
 
 import org.testng.Assert;
 import com.microsoft.playwright.Page;
-import com.microsoft.playwright.options.MouseButton;
 import com.winmore.utils.PlaywrightDriver;
 
 /**

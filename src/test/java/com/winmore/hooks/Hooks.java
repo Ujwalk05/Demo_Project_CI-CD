@@ -1,19 +1,10 @@
 package com.winmore.hooks;
 
-import java.io.File;
-import java.io.IOException;
-import java.nio.file.Path;
+
+
 import java.nio.file.Paths;
-
-import org.apache.logging.log4j.core.util.FileUtils;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
-import org.testng.annotations.AfterSuite;
-
-import com.winmore.testactions.EmailReport;
 import com.winmore.testactions.TestSummary;
 import com.winmore.utils.Log;
-import com.aventstack.extentreports.ExtentReports;
 import com.microsoft.playwright.Page;
 import io.cucumber.java.*;
 import com.winmore.utils.PlaywrightDriver;
