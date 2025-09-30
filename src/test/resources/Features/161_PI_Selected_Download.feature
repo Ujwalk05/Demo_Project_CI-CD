@@ -14,7 +14,7 @@ Scenario: Login into the app
 	
 Scenario: User creating a record for Formula Check from PI
 	Given the user selecting the "Browse" tab
-	Then the user navigating to the RateAIAutos option
+	Then the user navigating to the "RateAIAutos" options
 	And the user selecting the Create Record button
 	Then the user adding record name "PI Selected New Download" in Create Record screen
 	And the user selecting the Create button
