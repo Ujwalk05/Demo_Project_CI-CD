@@ -23,19 +23,24 @@ public class PageInitializer {
 	public static UtilityActionHelper actionHelper;
 	public static ValidationActionHelper validationHelper;
 
+
 	//Data related
 	protected static PropertyDataHandler propertyData;
 	protected TestEnvironmentData envData;
 
-	// Pages
-	public static LoginPage loginPage;
-	public static HomePage homePage;
-	public static OceanPricingPage pricingPage;
-	public static ExtensionsPage extensionsPage;
-	public static QuickCreatePage quickCreatePage;
+    
+    // Pages
+    public static LoginPage loginPage;
 
-	// CommonUtils
-	public static CommonUtils commonUtils;
+    public static HomePage homePage;
+    public static OceanPricingPage pricingPage;
+    public static ExtensionsPage extensionsPage;
+	public static QuickCreatePage quickCreatePage;
+    
+    // CommonUtils
+    public static CommonUtils commonUtils;
+
+
 
 	public PageInitializer() {
 		// initialize helpers once

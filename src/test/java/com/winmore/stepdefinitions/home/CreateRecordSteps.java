@@ -5,6 +5,8 @@ import org.apache.logging.log4j.Logger;
 import com.winmore.exceptions.AutomationException;
 import com.winmore.pageinitializer.PageInitializer;
 import com.winmore.utils.Log;
+
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 
@@ -20,11 +22,24 @@ public class CreateRecordSteps extends PageInitializer{
 		Log.info("✅ User clicked on browse successfully");
 	}
 
-	@Then("the user navigating to the RateAIAutos option")
-	public void the_user_navigating_to_the_rate_ai_autos_option() {
-		actionHelper.waitForElementToBeVisible(homePage.rateAIAutos);
-		clickHelper.click(homePage.rateAIAutos);
-		Log.info("✅ User navigated to RateAIAutos option successfully");
+	@Then("the user navigating to the {string} options")
+	public void user_selecting_record_Template(String optionName) {
+		switch (optionName) {
+			case "Bids":
+				actionHelper.waitForElementToBeVisible(homePage.bids);
+				clickHelper.click(homePage.bids);
+				Log.info("✅ User navigated to Bids option successfully");
+				break;
+
+				case "RateAIAutos":
+					actionHelper.waitForElementToBeVisible(homePage.rateAIAutos);
+					clickHelper.click(homePage.rateAIAutos);
+					Log.info("✅ User navigated to RateAIAutos option successfully");
+				break;
+		
+			default:
+				break;
+		}
 	}
 	
 	@Then("the user navigating to the RateAILatest option")
@@ -112,4 +127,19 @@ public class CreateRecordSteps extends PageInitializer{
 		validationHelper.verifyElementContainsText(homePage.pageHeaderTitle, overviewheader);
 	    Log.info("✅ User verified the "+ overviewheader +" header in record screen successfully");
 	}
+	@Then ("the user adding details in Create Record screen for creating a record with name {string}")
+	public void the_user_adding_details_in_create_record_screen_for_creating_a_record_with_name(String recordName) {
+		actionHelper.waitForElementToBeVisible(homePage.addRecordName);
+		inputHelper.fill(homePage.addRecordName, recordName);
+		Log.info("✅ User added record name as: " + recordName);
+	}
+
+    @And ("the user selecting the Create Record screen Create button")
+	public void the_user_selecting_the_create_record_screen_create_button() {
+		clickHelper.click(homePage.RecordCreate);
+		Log.info("✅ User clicked on Create button in slideout header");
+	}
+    
+	
+
 }
