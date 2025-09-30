@@ -10,7 +10,10 @@ public class HomePage {
 	
 	public String rateAIAutos = "//a[normalize-space()='RateAIAutos']";
 	public String rateAIAutos_Description = "RateAIAutos button";
-	
+
+	public String bids= "//a[normalize-space()='Bids']";
+	public String bids_Description = "Bids button";
+
 	public String rateAILatest = "//a[contains(text(),'RateAI Latest')][1]";
 	public String rateAILatest_Description = "RateAILatest button";
 	
@@ -22,7 +25,10 @@ public class HomePage {
 
 	public String createRecord = "//span[@class='-u-btn__content']//span[contains(text(),'Create Record')]";
 	public String createRecord_Description = "Create Record button";
-	
+
+    public String RecordCreate = "//div[@class='slideout-header -u-flex--none']//span[contains(text(),'Create')]";
+	 public String RecordCreate_description = "Create button in slideout header";
+	 
 	public String addRecordName = "(//ul[@class='flexible-list list-unstyled layout-group']//input[@class='-u-form-group__input -u-form-group__input--text'])[1]";
 	public String addRecordName_Description = "First input field for entering record name";
 
