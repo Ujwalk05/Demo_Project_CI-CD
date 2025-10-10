@@ -9,7 +9,6 @@ import com.winmore.exceptions.AutomationException;
 import com.winmore.pageinitializer.PageInitializer;
 import com.winmore.utils.Log;
 import com.winmore.utils.TestDataConstants;
-
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -29,23 +28,23 @@ public class CreateRecordSteps extends PageInitializer{
 	@Then("the user navigating to the {string} options")
 	public void user_selecting_record_Template(String optionName) {
 		switch (optionName) {
-			case "Bids":
-				actionHelper.waitForElementToBeVisible(homePage.bids);
-				clickHelper.click(homePage.bids);
-				Log.info("✅ User navigated to Bids option successfully");
-				break;
+		case "Bids":
+			actionHelper.waitForElementToBeVisible(homePage.bids);
+			clickHelper.click(homePage.bids);
+			Log.info("✅ User navigated to Bids option successfully");
+			break;
 
-				case "RateAIAutos":
-					actionHelper.waitForElementToBeVisible(homePage.rateAIAutos);
-					clickHelper.click(homePage.rateAIAutos);
-					Log.info("✅ User navigated to RateAIAutos option successfully");
-				break;
-		
-			default:
-				break;
+		case "RateAIAutos":
+			actionHelper.waitForElementToBeVisible(homePage.rateAIAutos);
+			clickHelper.click(homePage.rateAIAutos);
+			Log.info("✅ User navigated to RateAIAutos option successfully");
+			break;
+
+		default:
+			break;
 		}
 	}
-	
+
 	@Then("the user navigating to the RateAILatest option")
 	public void the_user_navigating_to_the_rate_ai_latest_option() {
 		actionHelper.waitForElementToBeVisible(homePage.rateAILatest);
