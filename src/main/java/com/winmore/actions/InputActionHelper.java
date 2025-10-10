@@ -10,7 +10,7 @@ import com.winmore.utils.PlaywrightDriver;
  * A helper class for performing various input actions on web elements
  * using Playwright.
  */
-public class InputActionHelper {
+public class InputActionHelper{
 
     private final Page page;
 
@@ -33,6 +33,16 @@ public class InputActionHelper {
     public void fill(String locatorKey, String value) {
         try {
             page.locator(locatorKey).fill(value);
+        } catch (Throwable t) {
+            Assert.fail("Failed to fill input '" + locatorKey + "': " + t.getMessage());
+        }
+    }
+
+    public void selectDropdownOption(String locatorKey, String value) {
+        try {
+            page.locator(locatorKey).fill(value);
+            Thread.sleep(4000);
+            page.locator(locatorKey).press("Enter");
         } catch (Throwable t) {
             Assert.fail("Failed to fill input '" + locatorKey + "': " + t.getMessage());
         }

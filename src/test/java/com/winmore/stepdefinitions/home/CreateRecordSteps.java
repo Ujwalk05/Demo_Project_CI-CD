@@ -2,9 +2,13 @@ package com.winmore.stepdefinitions.home;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+
+import com.winmore.actions.InputActionHelper;
+import com.winmore.base.TestBase;
 import com.winmore.exceptions.AutomationException;
 import com.winmore.pageinitializer.PageInitializer;
 import com.winmore.utils.Log;
+import com.winmore.utils.TestDataConstants;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -127,10 +131,32 @@ public class CreateRecordSteps extends PageInitializer{
 	    Log.info("✅ User verified the "+ overviewheader +" header in record screen successfully");
 	}
 	@Then ("the user adding details in Create Record screen for creating a record with name {string}")
-	public void the_user_adding_details_in_create_record_screen_for_creating_a_record_with_name(String recordName) {
+	public void the_user_adding_details_in_create_record_screen_for_creating_a_record_with_name(String recordName) throws Exception {
 		actionHelper.waitForElementToBeVisible(homePage.addRecordName);
 		inputHelper.fill(homePage.addRecordName, recordName);
 		Log.info("✅ User added record name as: " + recordName);
+
+		inputHelper.selectDropdownOption(homePage.UserAccount, TestDataConstants.AccountName);
+		Log.info("✅ User selected account as: " + TestDataConstants.AccountName);
+		Thread.sleep(2000);
+
+		clickHelper.click(homePage.BidDate);
+		clickHelper.click(homePage.CalenderNextMonthBtn_InCreateRecordScreen);
+		clickHelper.click(homePage.CalenderDate_4thRaw4col_InCreateRecordScreen);
+
+		//inputHelper.selectOption(homePage.ScopeSelectionDropdownInputInCreationLayout, TestDataConstants.Scope_RFP);
+		inputHelper.selectDropdownOption(homePage.ScopeSelectionDropdownInputInCreationLayout, TestDataConstants.Scope_RFP);
+		Log.info("✅ User selected scope as: " + TestDataConstants.Scope_RFP);
+
+		//inputHelper.selectOption(homePage.ModeSelectionDropdownInputInCreationLayout, TestDataConstants.Mode_Tl);
+		inputHelper.selectDropdownOption(homePage.ModeSelectionDropdownInputInCreationLayout, TestDataConstants.Mode_Tl);
+		Log.info("✅ User selected mode as: " + TestDataConstants.Mode_Tl);
+
+		//inputHelper.selectOption(homePage.CommoditySelectionDropdownInputInCreationLayout, TestDataConstants.Commodity_General);
+		inputHelper.selectDropdownOption(homePage.CommoditySelectionDropdownInputInCreationLayout, TestDataConstants.Commodity_General);
+		Log.info("✅ User selected commodity as: " + TestDataConstants.Commodity_General);
+
+
 	}
 
     @And ("the user selecting the Create Record screen Create button")

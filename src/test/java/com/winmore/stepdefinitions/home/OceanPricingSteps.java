@@ -9,11 +9,10 @@ import io.cucumber.java.en.Then;
 
 public class OceanPricingSteps extends PageInitializer{
 	
-	@Given("the user selecting the {string} button in the opean pricing page")
-	public void the_user_selecting_the_button_in_the_opean_pricing_page(String shipperimport) {
-		String shipperimportbutton = String.format(pricingPage.importFile, shipperimport);
-	    actionHelper.waitForElementToBeVisible(shipperimportbutton);
-	    clickHelper.click(shipperimportbutton);
+	@Given("the user selecting Shipper Import File button")
+	public void the_user_selecting_Shipper_import() {
+	    actionHelper.waitForElementToBeVisible(pricingPage.importFile);
+	    clickHelper.click(pricingPage.importFile);
 		Log.info("✅ User clicked shipper import successfully");
 	}
 	

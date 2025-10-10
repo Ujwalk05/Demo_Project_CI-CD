@@ -1,6 +1,8 @@
 package com.winmore.actions;
 
 import org.testng.Assert;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
@@ -11,6 +13,7 @@ import com.microsoft.playwright.Page.WaitForSelectorOptions;
 public class ValidationActionHelper {
 	
 	public static Page page;
+	private static final Logger logger = LogManager.getLogger(ValidationActionHelper.class);
 
 	public ValidationActionHelper() {
 
@@ -32,10 +35,10 @@ public class ValidationActionHelper {
 		
 		try {
 			page.waitForSelector(locatorKey, new WaitForSelectorOptions().setTimeout(2000));
-
 			return true;
 		} catch (Throwable t) {
-
+			// Log at debug to avoid noisy logs; elevate to warn if needed
+			logger.debug("Element not present or wait timed out for locator: {} - {}", locatorKey, t.getMessage());
 			return false;
 		}
 
