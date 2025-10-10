@@ -30,7 +30,7 @@ Scenario: User navigating to the Ocean Pricing page in template screen
 	Then the user verifying the presence of "Ocean Pricing" template screen
 	
 Scenario: User Uploading the shipper file 
-	Given the user selecting the "Import File" button in the opean pricing page
+	Given the user selecting Shipper Import File button
 	Then the user uploading the shipper file "KimberlyClark_FormulaCheckFile.xlsx" in Price Import screen 
 	And the user clicking the "Import" button 
 	Then the user verifying that the Header row prediction is "4" 

@@ -56,4 +56,26 @@ public class HomePage {
 	public String confirmDeleteRecord = "//div[@class='confirm-slideout u-confirm-slideout']//a[contains(text(),'Delete')]";
 	public String confirmDeleteRecord_Description = "Confirm delete record button in confirmation popup";
 
+
+	public String UserAccount= "//label[text()='Account']/following-sibling::div//input[1]";
+	public String UserAccount_Description = "User Account field in the creation slideout";
+
+
+	public String BidDate= "(//div[@class='datepicker-container']//button)[1]";
+	public String BidDate_Description = "Bid Date field in the creation slideout";
+
+	public String CalenderNextMonthBtn_InCreateRecordScreen = " //div[@class='date-picker-wrapper']//div[@class='dp-next-nav dp-nav-cell dp-cell'] | //div[@class=' date-picker']//div[@class='dp-next-nav dp-nav-cell dp-cell']";
+	public String CalenderNextMonthBtn_InCreateRecordScreen_Description = "Next month button in calendar popup in create record screen";
+
+    public String CalenderDate_4thRaw4col_InCreateRecordScreen = " //div[@class='dp-body']//div[@class='dp-week dp-row'][4]//div[@class='dp-cell dp-day'][4]";
+	public String CalenderDate_4thRaw4col_InCreateRecordScreen_Description = "4th row 4th column date in calendar popup in create record screen";
+
+	public String ScopeSelectionDropdownInputInCreationLayout = "//label[text()='Scope']/following-sibling::div//input[1]";
+	public String ScopeSelectionDropdownInputInCreationLayout_Description = "Scope dropdown input field in creation layout";
+
+    public String ModeSelectionDropdownInputInCreationLayout = "//label[text()='Mode']/following-sibling::div//input[1]";
+	public String ModeSelectionDropdownInputInCreationLayout_Description = "Mode dropdown input field in creation layout";
+
+	public String CommoditySelectionDropdownInputInCreationLayout = "//label[text()='Commodity']/following-sibling::div//input[1]";
+	public String CommoditySelectionDropdownInputInCreationLayout_Description = "Commodity dropdown input field in creation layout";
 }

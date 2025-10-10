@@ -5,11 +5,13 @@ import com.winmore.actions.FileUploadHelper;
 import com.winmore.actions.InputActionHelper;
 import com.winmore.actions.UtilityActionHelper;
 import com.winmore.actions.ValidationActionHelper;
+import com.winmore.base.TestBase;
 import com.winmore.pages.ExtensionsPage;
 import com.winmore.pages.HomePage;
 import com.winmore.pages.LoginPage;
 import com.winmore.pages.OceanPricingPage;
 import com.winmore.pages.QuickCreatePage;
+import com.winmore.pages.WorkFlowPage;
 import com.winmore.testingdata.PropertyDataHandler;
 import com.winmore.utils.CommonUtils;
 import com.winmore.utils.TestEnvironmentData;
@@ -36,9 +38,13 @@ public class PageInitializer {
     public static OceanPricingPage pricingPage;
     public static ExtensionsPage extensionsPage;
 	public static QuickCreatePage quickCreatePage;
+	public static WorkFlowPage workFlowPage;
     
     // CommonUtils
     public static CommonUtils commonUtils;
+
+	//Constants
+	public static TestBase testBase;
 
 
 
@@ -57,6 +63,8 @@ public class PageInitializer {
 		uploadHelper = new FileUploadHelper();
 		pricingPage = new OceanPricingPage();
 		quickCreatePage = new QuickCreatePage();
+		testBase = new TestBase();
+		workFlowPage = new WorkFlowPage();
 	}
 
 }
