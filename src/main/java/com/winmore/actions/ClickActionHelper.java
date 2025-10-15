@@ -25,6 +25,7 @@ public class ClickActionHelper {
      */
     public void click(String locatorKey) {
         try {
+            
             page.locator(locatorKey).click();
         } catch (Throwable t) {
             Assert.fail("Failed to perform a standard click on locator '" + locatorKey + "': " + t.getMessage());
@@ -59,5 +60,9 @@ public class ClickActionHelper {
         } catch (Throwable t) {
             Assert.fail("Failed to wait for and click on locator '" + locatorKey + "': " + t.getMessage());
         }
+    }
+
+    public void pause(){
+        page.pause();
     }
 }

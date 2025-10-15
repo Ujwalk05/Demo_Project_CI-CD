@@ -9,3 +9,9 @@ test-output/
 Reports/
 
 /target/
+/build/
+# Ignore compiled class files
+*.class
+
+
+
