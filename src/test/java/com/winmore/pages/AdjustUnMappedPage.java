@@ -10,4 +10,5 @@ public class AdjustUnMappedPage {
         return "(//div[@class='client-components-table-renderer-components-column-mapping-workflow-components-mapping-summary-__index-module__mappingSummaryContainer'])[" + radioButtonNumber + "]//li/div[3]//input[@type='radio']";
     }
     public String ImportAsAdhocColumnRadio_Description= "Import as AdHoc column radio button dynamically";
+
 }

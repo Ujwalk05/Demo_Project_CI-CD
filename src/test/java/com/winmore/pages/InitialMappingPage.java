@@ -7,6 +7,7 @@ public class InitialMappingPage {
 
    public String getReviewScreenMappedExcelColumnHeaderValue(int index) {
         return "((//ul[@class='column-list'])[1]//ul[1]//li[1]/span[2])[" + index + "]";
+   
     }
     
     

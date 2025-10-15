@@ -6,8 +6,6 @@ import com.winmore.testingdata.ExcelDataHandler;
 import org.testng.Assert;
 
 public class MLCasesHelp extends PageInitializer {
-
-    
     // This method will compare the column header value showing in app with the excel column header value
     // Parameters:
     // MappedColumnShowing: The locator of the column header value showing in app

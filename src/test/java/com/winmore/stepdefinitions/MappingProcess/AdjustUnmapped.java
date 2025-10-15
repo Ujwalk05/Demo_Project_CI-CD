@@ -10,7 +10,7 @@ public class AdjustUnmapped extends PageInitializer {
     @Then("the user verifying the presence of Adjust Unmapped screen")
     public void the_user_verifying_the_presence_of_adjust_unmapped_screen() {
         actionHelper.waitForElementToBeVisible(adjustUnMappedPage.AdjustUnmappedScreen_Header);
-        Log.info("✅ User is on the Adjust Unmapped screen");
+        Log.info("✅ User is on the Adjust Unmapped screen"); 
     }
 
     @Given("the user clicking on the button import as AdHoc column_CheckBox {string}")
@@ -19,5 +19,6 @@ public class AdjustUnmapped extends PageInitializer {
         actionHelper.waitForElementToBeVisible(RadioButton);
         clickHelper.click(RadioButton);
         Log.info("✅ User clicked on the button import as AdHoc column_CheckBox " + RadioButtonNumber);
+   
     }
 }

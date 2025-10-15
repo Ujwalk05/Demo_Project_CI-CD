@@ -38,6 +38,7 @@ public class ShipperFileImportpage {
 	public String MappingScreen_NextButton = "//div[@class='mapping-header-buttons']//span[contains(text(),'Next')]";
 	public String MappingScreen_NextButton_Description = "Next button in Mapping screen header";
 
+	
 
 
 }

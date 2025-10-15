@@ -27,6 +27,7 @@ public class AutoMapped extends PageInitializer{
                 break;       
         }
 		Log.info("✅ User successfully verified all the mapped Excel columns in Initial Review screen for " + fileName);
-	}
+	
+  }
 }
 }

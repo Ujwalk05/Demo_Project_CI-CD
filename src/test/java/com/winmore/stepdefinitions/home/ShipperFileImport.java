@@ -105,6 +105,7 @@ public class ShipperFileImport extends PageInitializer{
 		presence = statusPresence.contains(string);
 		Assert.assertTrue(presence,
 				"File upload history table status showing (" + statusPresence + ") is not matched with the expected (" + string + ")");
-	}
+	
+			}
 
 }
