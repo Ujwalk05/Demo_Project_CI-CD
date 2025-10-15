@@ -67,7 +67,7 @@ public class LoginSteps extends PageInitializer{
 				break;
 				
 			case "RateAI CurrencyAndFormula Automation":
-				clickHelper.click(loginPage.OrganizationSelection_RateAIAutomationBtn);
+				clickHelper.click(loginPage.OrganizationSelection_RateAIcurrencyandformulaBtn);
 				break;
 
 			default:

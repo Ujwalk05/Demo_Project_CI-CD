@@ -12,17 +12,17 @@ Scenario: Launching the app
 	And the user selecting the Organization "RateAI CurrencyAndFormula Automation"  
 	Then the user verifying the successful login
 
-    Scenario: User creating a record for Formula Check from PI
+    Scenario: User creating a record
 	Given the user selecting the "Browse" tab 
 	Then the user navigating to the "Bids" options 
 	And the user selecting the Create Record button 
-	Then the user adding details in Create Record screen for creating a record with name "Rate AI Task Shipper" 
+	Then the user adding details in Create Record screen for creating a record with name "Rate AI Task Shipper Adhoc Column testing" 
 	And the user selecting the Create Record screen Create button 
 	Then the user verifying the presence of Record Creation Success screen 
 
 	Scenario: User navigating to the created record 
 	Given the user moving to the record from record creation success screen 
-	Then the user verifying the presence of "Record" screen 
+	Then the user verifying the presence of Record screen 
 
 	Scenario: User launching the Sample Workflow RateAI 
 	Given the user clicking on View all workflow Grid
@@ -37,7 +37,35 @@ Scenario: Launching the app
 	Given the user selecting Shipper Import File button 
 	Then the user uploading the shipper file "Lowes_Mini_Example.xlsx" in Price Import screen 
     And the user clicking the "Import" button 
-	Then the user verifying that the Header row prediction is "4" 
+	Then the user verifying that the Header row prediction is "6" 
 	And the user clicking the "Proceed" button
 	And the user clicking the "CloseSubmissionButton" button
+	And the user clicking the "File upload history table_Expand_Edit" button
+	And the user verifying that the status changed to "Confirm Mapping" in File upload history table 
 
+Scenario: User verifying the initial review screen 
+	Given the user clicking the "Confirm Mapping" button
+	Then the user verifying the presence of Initial Review screen
+	And the user verifying all the mapped Excel columns in Initial Review screen for "Lowes_Mini_Example.xlsx"
+	
+Scenario: User verifying the Adjust Auto-Mapped screen 
+	Given the user clicking the "Mapping Screen Next" button 
+	Then the user verifying the presence of Adjust Auto-Mapped screen
+	And the user verifying all the mapped Excel columns header in Confirm Mapping screen for "Lowes_Mini_Example.xlsx"
+	
+	Scenario: User verifying the navigation to Adjust Unmapped screen 
+	Given the user clicking the "Mapping Screen Next" button 
+	Then the user verifying the presence of Adjust Unmapped screen 
+
+	Scenario: User updating the adhoc columns in Adjust Unmapped screen
+	Given the user clicking on the button import as AdHoc column_CheckBox "1"
+	Then the user updating the adhoc column "1" segment selection dropdown value as "None"
+	And the user updating the adhoc column "1" adhoc type as "Other"
+	Then the user clicking on the button "Import as AdHoc column_CheckBox _2nd Table_Map Unmatched Screen"
+	And the user updating the adhoc column "2" segment selection dropdown value as "None"
+	Then the user updating the adhoc column "2" adhoc type as "Other"
+	And the user updating the "second table" column name to "adhoc dest hour" in Map Unmatched Screen
+
+
+	Scenario: User verifying the Mapping review screen 
+	Given the user selecting the "Mapping Screen Next" button 

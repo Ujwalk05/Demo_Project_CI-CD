@@ -6,12 +6,16 @@ import com.winmore.actions.InputActionHelper;
 import com.winmore.actions.UtilityActionHelper;
 import com.winmore.actions.ValidationActionHelper;
 import com.winmore.base.TestBase;
+import com.winmore.pages.AdjustUnMappedPage;
+import com.winmore.pages.AutoMappingPage;
 import com.winmore.pages.ExtensionsPage;
 import com.winmore.pages.HomePage;
+import com.winmore.pages.InitialMappingPage;
 import com.winmore.pages.LoginPage;
-import com.winmore.pages.OceanPricingPage;
+import com.winmore.pages.ShipperFileImportpage;
 import com.winmore.pages.QuickCreatePage;
 import com.winmore.pages.WorkFlowPage;
+import com.winmore.testhelper.MLCasesHelp;
 import com.winmore.testingdata.PropertyDataHandler;
 import com.winmore.utils.CommonUtils;
 import com.winmore.utils.TestEnvironmentData;
@@ -24,6 +28,7 @@ public class PageInitializer {
 	public static InputActionHelper inputHelper;
 	public static UtilityActionHelper actionHelper;
 	public static ValidationActionHelper validationHelper;
+	public static MLCasesHelp mlCasesHelp;
 
 
 	//Data related
@@ -35,10 +40,13 @@ public class PageInitializer {
     public static LoginPage loginPage;
 
     public static HomePage homePage;
-    public static OceanPricingPage pricingPage;
+    public static ShipperFileImportpage Shipperimportpage;
     public static ExtensionsPage extensionsPage;
 	public static QuickCreatePage quickCreatePage;
 	public static WorkFlowPage workFlowPage;
+	public static InitialMappingPage initialMappingPage;
+	public static AutoMappingPage autoMappingPage;
+	public static AdjustUnMappedPage adjustUnMappedPage;
     
     // CommonUtils
     public static CommonUtils commonUtils;
@@ -61,10 +69,15 @@ public class PageInitializer {
 		homePage = new HomePage();
 		extensionsPage = new ExtensionsPage();
 		uploadHelper = new FileUploadHelper();
-		pricingPage = new OceanPricingPage();
+		Shipperimportpage = new ShipperFileImportpage();
 		quickCreatePage = new QuickCreatePage();
 		testBase = new TestBase();
 		workFlowPage = new WorkFlowPage();
+		initialMappingPage = new InitialMappingPage();
+	 	//mlCasesHelp = new MLCasesHelp();
+	    autoMappingPage = new AutoMappingPage();
+	    adjustUnMappedPage = new AdjustUnMappedPage();
+
 	}
 
 }
