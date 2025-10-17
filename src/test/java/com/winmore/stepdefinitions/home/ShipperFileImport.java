@@ -51,7 +51,12 @@ public class ShipperFileImport extends PageInitializer{
             case "mapping screen next":
 				locator = Shipperimportpage.MappingScreen_NextButton;
 				break;
+
+			case "file upload history table _close":
+				locator = Shipperimportpage.FileUploadHistoryTable_CloseBtn;
+				break;
 			
+
 	        default:
 	            throw new RuntimeException("No locator defined for button: " + buttonName);
 	    }
@@ -99,13 +104,25 @@ public class ShipperFileImport extends PageInitializer{
 	}
 
 	@And("the user verifying that the status changed to {string} in File upload history table")
-	public void the_user_verifying_that_the_status_changed_to_in_file_upload_history_table(String string) throws AutomationException {
+	public void the_user_verifying_that_the_status_changed_to_in_file_upload_history_table(String Status) throws AutomationException {
 		boolean presence = false;
 		String statusPresence = validationHelper.getTrimmedText(Shipperimportpage.ConfirmMappingStatus_InFileUploadHistoryTable);
-		presence = statusPresence.contains(string);
+		presence = statusPresence.contains(Status);
 		Assert.assertTrue(presence,
-				"File upload history table status showing (" + statusPresence + ") is not matched with the expected (" + string + ")");
+				"File upload history table status showing (" + statusPresence + ") is not matched with the expected (" + Status + ")");
 	
 			}
+@Then("the user verifying that the status changed to Completed in File upload history table")
+public void the_user_verifying_that_the_status_changed_to_Completed_in_File_upload_history_table() throws AutomationException {
+	boolean presence = false;
+	String statusPresence = validationHelper.getTrimmedText(Shipperimportpage.CompletedStatus_InFileUploadHistoryTable);
+	presence = statusPresence.contains("Completed");
+	Assert.assertTrue(presence,
+			"File upload history table status showing (" + statusPresence + ") is not matched with the expected (Completed)");
+        
+		actionHelper.waitForElementToBeVisible(Shipperimportpage.FileUploadHistoryTable_CloseBtn);
+	    clickHelper.click(Shipperimportpage.FileUploadHistoryTable_CloseBtn);
+	    Log.info("✅ User clicked the Close button in File Upload History table successfully");
 
+		}
 }

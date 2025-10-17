@@ -38,7 +38,9 @@ public class ShipperFileImportpage {
 	public String MappingScreen_NextButton = "//div[@class='mapping-header-buttons']//span[contains(text(),'Next')]";
 	public String MappingScreen_NextButton_Description = "Next button in Mapping screen header";
 
-	
+	public String FileUploadHistoryTable_CloseBtn = "//button[@class='-u-btn -u-btn--pill -u-btn--block']//span[contains(text(),'Close')]";
+	public String FileUploadHistoryTable_CloseBtn_Description = "Close button in File Upload History table";
 
-
+	public String CompletedStatus_InFileUploadHistoryTable= "((//div[contains(@class,'react-grid-Row react-grid-Row')])//div[@class='statusColumnContainer'])[1]";
+	public String CompletedStatus_InFileUploadHistoryTable_Description= "Completed status in File Upload History table";
 }
