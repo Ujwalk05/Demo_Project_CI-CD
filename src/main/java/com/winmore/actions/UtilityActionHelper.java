@@ -70,4 +70,32 @@ public class UtilityActionHelper {
 		String filePathdate = dateFormat.format(date).toString();
 		return filePathdate;
 	}
+public void clearText(String locator) {
+    try {
+        page.fill(locator, ""); // Fill the input field with an empty string to clear it
+        System.out.println("✅ Cleared text in element: " + locator);
+    } catch (Exception e) {
+        System.err.println("❌ Error clearing text in element: " + locator + " - " + e.getMessage());
+        throw e; // Re-throw the exception to fail the test
+    }
+}
+public void typeText(String locator, String text) {
+    try {
+        page.fill(locator, text); // Fill the input field with the specified text
+        System.out.println("✅ Typed text '" + text + "' in element: " + locator);
+    } catch (Exception e) {
+        System.err.println("❌ Error typing text in element: " + locator + " - " + e.getMessage());
+        throw e; // Re-throw the exception to fail the test
+    }
+}
+    public void TypeTextandPressEnter(String locator, String text) {
+        try {
+            page.fill(locator, text); // Fill the input field with the specified text
+            page.keyboard().press("Enter"); // Press Enter key
+            System.out.println("✅ Typed text '" + text + "' and pressed Enter in element: " + locator);
+        } catch (Exception e) {
+            System.err.println("❌ Error typing text and pressing Enter in element: " + locator + " - " + e.getMessage());
+            throw e; // Re-throw the exception to fail the test
+        }
+    }
 }

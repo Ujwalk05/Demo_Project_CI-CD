@@ -12,13 +12,16 @@ import com.winmore.pages.ExtensionsPage;
 import com.winmore.pages.HomePage;
 import com.winmore.pages.InitialMappingPage;
 import com.winmore.pages.LoginPage;
+import com.winmore.pages.MappingReviewPage;
 import com.winmore.pages.ShipperFileImportpage;
 import com.winmore.pages.QuickCreatePage;
+import com.winmore.pages.PriceInspectorPage;
 import com.winmore.pages.WorkFlowPage;
 import com.winmore.testhelper.MLCasesHelp;
 import com.winmore.testingdata.PropertyDataHandler;
 import com.winmore.utils.CommonUtils;
 import com.winmore.utils.TestEnvironmentData;
+
 
 public class PageInitializer {
 
@@ -47,6 +50,8 @@ public class PageInitializer {
 	public static InitialMappingPage initialMappingPage;
 	public static AutoMappingPage autoMappingPage;
 	public static AdjustUnMappedPage adjustUnMappedPage;
+	public static MappingReviewPage mappingReviewPage;
+	public static PriceInspectorPage priceInspectorPage;
     
     // CommonUtils
     public static CommonUtils commonUtils;
@@ -77,6 +82,8 @@ public class PageInitializer {
 	 	//mlCasesHelp = new MLCasesHelp();
 	    autoMappingPage = new AutoMappingPage();
 	    adjustUnMappedPage = new AdjustUnMappedPage();
+		mappingReviewPage = new MappingReviewPage();
+        priceInspectorPage = new PriceInspectorPage();
 
 	}
 

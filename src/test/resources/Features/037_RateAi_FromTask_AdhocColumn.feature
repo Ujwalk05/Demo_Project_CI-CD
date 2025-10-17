@@ -61,11 +61,22 @@ Scenario: User verifying the Adjust Auto-Mapped screen
 	Given the user clicking on the button import as AdHoc column_CheckBox "1"
 	Then the user updating the adhoc column "1" segment selection dropdown value as "None"
 	And the user updating the adhoc column "1" adhoc type as "Other"
-	Then the user clicking on the button "Import as AdHoc column_CheckBox _2nd Table_Map Unmatched Screen"
+	Then the user clicking on the button import as AdHoc column_CheckBox "2"
 	And the user updating the adhoc column "2" segment selection dropdown value as "None"
 	Then the user updating the adhoc column "2" adhoc type as "Other"
 	And the user updating the "second table" column name to "adhoc dest hour" in Map Unmatched Screen
 
 
 	Scenario: User verifying the Mapping review screen 
-	Given the user selecting the "Mapping Screen Next" button 
+	Given the user clicking the "Mapping Screen Next" button 
+	Then the user verifying the presence of Mapping Review screen
+
+	Scenario: User verifying the File upload status in File upload history session 
+	Given the user selecting the Mapping Screen Proceed button 
+	And the user clicking the "CloseSubmissionButton" button
+	And the user clicking the "File upload history table_Expand_Edit" button
+	Then the user verifying that the status changed to Completed in File upload history table
+
+	Scenario: User verifying the PI table view 
+	Given the user clicks on the "PI table _Expand" button
+	Then the user verifying the imported data row count from PI table for "Lowes_Mini_Example"
