@@ -80,3 +80,11 @@ Scenario: User verifying the Adjust Auto-Mapped screen
 	Scenario: User verifying the PI table view 
 	Given the user clicks on the "PI table _Expand" button
 	Then the user verifying the imported data row count from PI table for "Lowes_Mini_Example"
+
+	Scenario: User enabling the shipper write back for Destination City column from PI Table
+		Given the user selecting the 3dot option for the column "Destination City" in PI Table
+		Then the user clicks on the button "Add to Shipper Update_3Dot Option"
+
+	Scenario: User verifying that the AdHoc columns are showing in the PI table
+	Given the user verifying that the PI table is showing the column "Origin Hours"
+	Then the user verifying that the PI table is showing the column "adhoc dest hour"
