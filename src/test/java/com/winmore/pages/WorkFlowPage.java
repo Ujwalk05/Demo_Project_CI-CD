@@ -21,6 +21,12 @@ public class WorkFlowPage {
     public String TaskHeader_inTaskScreen= "//div[@class='client-components-task-components-__title-module__taskName']";
     public String TaskHeader_inTaskScreen_Description= "Header in the task screen";
 
+    public String TaskViewCloseBtn = "//i[@class='-u-icon -u-icon--x client-components-modal-close-__index-module__closeIcon -u-icon--white']";
+    public String TaskViewCloseBtn_Description = "The task view close button element.";
+
+    public String Task_RateAI_Adhoc_InTaskList= "//div[@class='stage-detail']//div[contains(text(),'RateAi')]";
+    public String Task_RateAI_Adhoc_InTaskList_Description = "The task rate ai adhoc in task list for 'RateAi'.";
+
 
 }
 

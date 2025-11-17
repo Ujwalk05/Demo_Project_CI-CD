@@ -7,7 +7,6 @@ import java.util.Date;
 
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
@@ -15,7 +14,6 @@ import com.winmore.base.TestBase;
 import com.winmore.testactions.EmailReport;
 import com.winmore.utils.PlaywrightDriver;
 
-import io.cucumber.java.AfterAll;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 

@@ -5,8 +5,6 @@ import org.apache.logging.log4j.Logger;
 
 import com.winmore.exceptions.AutomationException;
 import com.winmore.pageinitializer.PageInitializer;
-import com.winmore.pages.WorkFlowPage;
-import com.winmore.stepdefinitions.home.CreateRecordSteps;
 import com.winmore.utils.Log;
 
 import io.cucumber.java.en.And;
@@ -55,27 +53,54 @@ public void the_user_verifying_that_the_selected_workflow_is_opened(String workf
 
     @Given("the user selecting the task {string} from task list")
     public void the_user_selecting_the_task_from_task_list(String taskName) {
+        String locator="";
         switch (taskName) {
             case "RateAI":
-                actionHelper.waitForElementToBeVisible(workFlowPage.Task_RateAI_InTaskList);
-                clickHelper.click(workFlowPage.Task_RateAI_InTaskList);
-                Log.info("✅ User clicked on task 'RateAI' from task list successfully");
+                locator = workFlowPage.Task_RateAI_InTaskList;
+                break;
+
+            case "RateAI Adhoc":
+                locator = workFlowPage.Task_RateAI_Adhoc_InTaskList;
                 break;
             default:
                 throw new IllegalArgumentException("Invalid task name: " + taskName);
         }
+         actionHelper.waitForElementToBeVisible(locator);
+        clickHelper.click(locator);
+        Log.info("✅ User clicked on task '" + taskName + "' from task list successfully");
     }
 
         @Then("the user verifying that the selected task {string} is opened")
         public void the_user_verifying_that_the_selected_task_is_opened(String taskName) throws Exception {
+            String locator="";
             switch (taskName) {
                 case "RateAI":
-                    actionHelper.waitForElementToBeVisible(workFlowPage.TaskHeader_inTaskScreen);
-                    validationHelper.verifyElementContainsText(workFlowPage.TaskHeader_inTaskScreen, "RateAI");
-                    Log.info("✅ User successfully verified that the selected task 'RateAI' is opened");
-                    break;
+                case "RateAI Adhoc":
+                    locator = workFlowPage.TaskHeader_inTaskScreen;
+                   break;
                 default:
                     throw new IllegalArgumentException("Invalid task name: " + taskName);
             }
+             actionHelper.waitForElementToBeVisible(locator);
+                    validationHelper.verifyElementContainsText(locator, "RateAI");
+              Log.info("✅ User successfully verified that the selected task ' " + taskName + " ' is opened");
+                                    
+            }     
+        
+
+        @And("the user selecting the {string} icon")
+        public void the_user_selecting_the_icon(String iconName) {
+            String locator="";
+            switch (iconName) {
+                case "Task view close":
+                    locator = workFlowPage.TaskViewCloseBtn;
+                    break;
+                default:
+                    throw new IllegalArgumentException("Invalid icon name: " + iconName);
+            }
+            actionHelper.waitForElementToBeVisible(locator);
+            clickHelper.click(locator);
+            Log.info("✅ User clicked on '" + iconName + "' icon successfully");
         }
+
 }

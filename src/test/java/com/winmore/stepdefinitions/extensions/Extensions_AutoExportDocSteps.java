@@ -89,9 +89,4 @@ public class Extensions_AutoExportDocSteps extends PageInitializer{
 	    
 	}
 
-	@Then("the user selecting the record from search result")
-	public void the_user_selecting_the_record_from_search_result() {
-	    
-	}
-
 }

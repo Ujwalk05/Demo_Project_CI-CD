@@ -2,9 +2,6 @@ package com.winmore.stepdefinitions.home;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-
-import com.winmore.actions.InputActionHelper;
-import com.winmore.base.TestBase;
 import com.winmore.exceptions.AutomationException;
 import com.winmore.pageinitializer.PageInitializer;
 import com.winmore.utils.Log;
@@ -114,9 +111,9 @@ public class CreateRecordSteps extends PageInitializer{
 	
 	@Given("the user selecting the {string} template from record screen")
 	public void the_user_selecting_the_template_from_record_screen(String templateName) {
-		String oceanPricingElement = String.format(homePage.oceanPricingElement, templateName);
-	    actionHelper.waitForElementToBeVisible(oceanPricingElement);
-	    clickHelper.click(oceanPricingElement);
+		String WorkBenchElement = String.format(homePage.Workbench, templateName);
+	    actionHelper.waitForElementToBeVisible(WorkBenchElement);
+	    clickHelper.click(WorkBenchElement);
 	}
 	
 	@Then("the user verifying the presence of {string} template screen")
@@ -164,7 +161,27 @@ public class CreateRecordSteps extends PageInitializer{
 		clickHelper.click(homePage.RecordCreate);
 		Log.info("✅ User clicked on Create button in slideout header");
 	}
-    
-	
+
+    @And("the user searching for a Record {string}")
+	public void the_user_searching_for_a_record(String recordName) {
+		actionHelper.waitForElementToBeVisible(homePage.BrowseComponentRecordList);
+		actionHelper.waitForElementToBeVisible(homePage.FilteringConditions_SelectControllingSearchField);
+		inputHelper.fill(homePage.FilteringConditions_SelectControllingSearchField, recordName);
+		Log.info("✅ User searched for a record: " + recordName);
+	}
+
+	@Then("the user verifying the record search result for {string}")
+	public void the_user_verifying_the_record_search_result_for(String recordName) throws Exception {
+		actionHelper.waitForElementToBeVisible(homePage.BrowseComponentRecordList);
+		validationHelper.verifyElementContainsText(homePage.BrowseComponentRecordList, recordName);
+		Log.info("✅ User verified the record search result for: " + recordName);
+	}
+
+	@And("the user selecting the record from search result")
+	public void the_user_selecting_the_record_from_search_result() {
+		actionHelper.waitForElementToBeVisible(homePage.BrowseComponentRecordSearchResult);
+		clickHelper.click(homePage.BrowseComponentRecordSearchResult);
+		Log.info("✅ User selected the record from search result");
+	}
 
 }
