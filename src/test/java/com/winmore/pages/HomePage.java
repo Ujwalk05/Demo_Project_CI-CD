@@ -50,8 +50,8 @@ public class HomePage {
 	public String aggregateShipment = "//a[contains(text(),'%s')][1]";
 	public String aggregateShipment_Description = "Aggregate Shipment Option";
 
-	public String oceanPricingElement = "//a[@class='app-item selected']/../a[.='%s']";
-	public String oceanPricingElement_Description = "Template option in record screen (replace %s with template name)";
+	public String Workbench = "//a[@class='app-item selected']/../a[.='%s']";
+	public String Workbench_Description = "Template option in record screen (replace %s with template name)";
 
 	public String confirmDeleteRecord = "//div[@class='confirm-slideout u-confirm-slideout']//a[contains(text(),'Delete')]";
 	public String confirmDeleteRecord_Description = "Confirm delete record button in confirmation popup";
@@ -78,4 +78,14 @@ public class HomePage {
 
 	public String CommoditySelectionDropdownInputInCreationLayout = "//label[text()='Commodity']/following-sibling::div//input[1]";
 	public String CommoditySelectionDropdownInputInCreationLayout_Description = "Commodity dropdown input field in creation layout";
+
+    public String BrowseComponentRecordList = "//div[@class='client-apps-browse-containers-__content-module__items']";
+    public String BrowseComponentRecordList_description = "The container for a list of records in the browse component.";
+
+    public String FilteringConditions_SelectControllingSearchField = "//div[@class='-u-form-group -u-form-group--block']//div[@class='-u-form-group -u-form-group--block']//input[@placeholder='Search']";
+    public String FilteringConditions_SelectControllingSearchField_description = "A search input field for selecting a controlling field.";
+
+    public String BrowseComponentRecordSearchResult = "//div[@class='client-apps-browse-components-records-__list-item-module__title']/div";
+    public String BrowseComponentRecordSearchResult_description = "A container for the title of a record search result in the browse component.";
+
 }

@@ -98,4 +98,14 @@ public void typeText(String locator, String text) {
             throw e; // Re-throw the exception to fail the test
         }
     }
+
+    public void hoverOverElement(String locator) {
+        try {
+            page.hover(locator); // Hover over the specified element
+            System.out.println("✅ Hovered over element: " + locator);
+        } catch (Exception e) {
+            System.err.println("❌ Error hovering over element: " + locator + " - " + e.getMessage());
+            throw e; // Re-throw the exception to fail the test
+        }
+    }
 }

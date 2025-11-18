@@ -17,7 +17,35 @@ public class PriceInspectorPage {
     public String PITable_ColumnHeader_OriginHours = "//div[contains(text(),'Origin Hours')] | //p[normalize-space()='Origin Hours']";
     public String PITable_ColumnHeader_OriginHours_Description = "Origin Hours column header in PI table";
 
-    public String PITable_ColumnHeader_AdhocDestHour = "//div[contains(text(),'Adhoc Dest Hour')] | //p[normalize-space()='Adhoc Dest Hour']";
+    public String PITable_ColumnHeader_AdhocDestHour = "//div[contains(text(),'adhoc dest hour')] | //p[normalize-space()='adhoc dest hour']";
     public String PITable_ColumnHeader_AdhocDestHour_Description = "Adhoc Dest Hour column header in PI table";
+
+    public String PITable_1stRow_Expand_btn = "(//i[@class='-u-icon -u-icon--expand'])[1]";
+    public String PITable_1stRow_Expand_btn_description = "The pitable 1st row expand btn element.";
+
+    public String PriceEditModal_AdHoc_Tab = "//div[text() = 'Ad Hoc']";
+    public String PriceEditModal_AdHoc_Tab_description = "The price edit modal ad hoc tab for 'Ad Hoc'.";
+
+    public String PriceEditModal_OriginHoursLabel = "//label[text() = 'Origin Hours']";
+    public String PriceEditModal_OriginHoursLabel_description = "The price edit modal origin hours label for 'Origin Hours'.";
+   
+    public String PriceEditModal_AdHocDestHourLabel = "//label[text() = 'adhoc dest hour']";
+    public String PriceEditModal_AdHocDestHourLabel_description = "The price edit modal ad hoc dest hour label for 'adhoc dest hour'";
+
+    public String PITable_Column_3DotOption_Button = "//div[@class='multisort multisort-hover']//div[@class='multisort-menu']/button | //div[@class='multisort multisort-hover']//div[@class='multisort-menu']//button | //div[@class='multisort multisort-hover']/div[@class='multisort-menu']/descendant::button[1]";
+    public String PITable_Column_3DotOption_Button_description = "The pitable column 3dot option button element.";
+
+   public String PriceEditModal_OriginHours_ValueField = "//label[text() = 'Origin Hours']/..//input[@class='-u-form-group__input -u-form-group__input--text']";
+   public String PriceEditModal_OriginHours_ValueField_description = "The price edit modal origin hours value field for 'Origin Hours'.";
+
+   public String PriceEditModal_Updated_label = "//div[@class='client-components-table-renderer-components-modal-component-header-__header-module__flex']//span[contains(text(),'Updated')] | //div[@class='client-components-table-renderer-components-modal-component-header-__header-module__flex']//span[contains(text(),'Saved')]";
+   public String PriceEditModal_Updated_label_description = "The price edit modal updated label for 'Updated'.";
+
+   public String PriceEditModal_CloseBtn = "//i[@class='-u-icon -u-icon--x client-components-modal-close-__index-module__closeIcon -u-icon--white']";
+   public String PriceEditModal_CloseBtn_description = "The price edit modal close btn element.";
+
+  public String PITable_CloseBtn = "//button[@class='-u-btn -u-btn--pill -u-btn--block']//span[contains(text(),'Close')]";
+  public String PITable_CloseBtn_description = "The pitable close btn for 'Close'.";
+
 
 }
