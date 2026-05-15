@@ -1,5 +1,16 @@
 version: 2.1
 
+parameters:
+  environment:
+    type: string
+    default: "qaprod"
+  tags:
+    type: string
+    default: "@SmokeTest"
+  email:
+    type: string
+    default: "ujwal.kumar@winmore.io"
+
 jobs:
   run-playwright-tests:
     docker:
@@ -16,8 +27,8 @@ jobs:
           command: mvn exec:java -e -D exec.mainClass=com.microsoft.playwright.CLI -D exec.args="install --with-deps"
 
       - run:
-          name: Run Tests
-          command: mvn test
+          name: Run Tests - Environment:<< pipeline.parameters.environment >> Tag:<< pipeline.parameters.tags >>
+          command: mvn clean test -Denvironment=<< pipeline.parameters.environment >> -Dcucumber.filter.tags="<< pipeline.parameters.tags >>" -DmailRecipients=<< pipeline.parameters.email >>
 
       - store_artifacts:
           path: target/surefire-reports
@@ -30,9 +41,4 @@ jobs:
 workflows:
   manual-trigger:
     jobs:
-      - run-playwright-tests:
-          filters:
-            tags:
-              only: /^run-.*/
-            branches:
-              ignore: /.*/
+      - run-playwright-tests
