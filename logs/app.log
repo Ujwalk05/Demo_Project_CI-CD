@@ -1,30 +1,48 @@
-2025-09-30 14:56:27 [main] INFO  com.winmore.utils.Log - ✅ Browser launched successfully.
-2025-09-30 14:56:27 [main] INFO  com.winmore.utils.Log - 🚀 Starting Scenario Execution...
-2025-09-30 14:56:27 [main] INFO  com.winmore.utils.Log - 🌍 Launching Winmore app on environment [napreprod] at: https://login-napreprod.lanetixstaging.com/
-2025-09-30 14:56:33 [main] INFO  com.winmore.utils.Log - ✅ Application URL launched successfully.
-2025-09-30 14:56:35 [main] INFO  com.winmore.utils.Log - ✅ Verified presence of login screen successfully.
-2025-09-30 14:56:35 [main] INFO  com.winmore.utils.Log - 🏁 Scenario Execution Finished.
-2025-09-30 14:56:35 [main] INFO  com.winmore.utils.Log - 🚀 Starting Scenario Execution...
-2025-09-30 14:56:36 [main] INFO  com.winmore.utils.Log - User entered the login credentials successfully.
-2025-09-30 14:56:54 [main] INFO  com.winmore.utils.Log - ✅ Login is successful in the application
-2025-09-30 14:56:54 [main] INFO  com.winmore.utils.Log - 🏁 Scenario Execution Finished.
-2025-09-30 14:56:54 [main] INFO  com.winmore.utils.Log - 🚀 Starting Scenario Execution...
-2025-09-30 14:56:58 [main] INFO  com.winmore.utils.Log - ✅ User clicked on browse successfully
-2025-09-30 14:56:58 [main] INFO  com.winmore.utils.Log - 🏁 Scenario Execution Finished.
-2025-09-30 14:56:58 [main] INFO  com.winmore.utils.Log - 🚀 Starting Scenario Execution...
-2025-09-30 14:57:28 [main] INFO  com.winmore.utils.Log - 🏁 Scenario Execution Finished.
-2025-09-30 14:57:29 [main] INFO  com.winmore.utils.Log - 🚀 Starting Scenario Execution...
-2025-09-30 14:57:59 [main] INFO  com.winmore.utils.Log - 🏁 Scenario Execution Finished.
-2025-09-30 14:57:59 [main] INFO  com.winmore.utils.Log - 🚀 Starting Scenario Execution...
-2025-09-30 14:58:29 [main] INFO  com.winmore.utils.Log - 🏁 Scenario Execution Finished.
-2025-09-30 14:58:30 [main] INFO  com.winmore.utils.Log - 🚀 Starting Scenario Execution...
-2025-09-30 14:58:32 [main] INFO  com.winmore.utils.Log - ✅ User logged out from the application successfully
-2025-09-30 14:58:38 [main] INFO  com.winmore.utils.Log - ✅ Verified presence of login screen successfully.
-2025-09-30 14:58:38 [main] INFO  com.winmore.utils.Log - 🏁 Scenario Execution Finished.
-2025-09-30 14:58:38 [main] INFO  com.winmore.utils.Log - 🚀 Starting Scenario Execution...
-2025-09-30 14:58:38 [main] INFO  com.winmore.utils.Log - 🌍 Launching Winmore app on environment [napreprod] at: https://login-napreprod.lanetixstaging.com/
-2025-09-30 14:58:40 [main] INFO  com.winmore.utils.Log - ✅ Application URL launched successfully.
-2025-09-30 14:58:42 [main] INFO  com.winmore.utils.Log - ✅ Verified presence of login screen successfully.
-2025-09-30 14:58:42 [main] INFO  com.winmore.utils.Log - 🏁 Scenario Execution Finished.
-2025-09-30 14:58:42 [main] INFO  com.winmore.utils.Log - 🚀 Starting Scenario Execution...
-2025-09-30 14:58:42 [main] INFO  com.winmore.utils.Log - User entered the login credentials successfully.
+2026-05-14 11:28:01 [main] INFO  com.winmore.utils.Log - ✅ Browser launched successfully.
+2026-05-14 11:28:02 [main] INFO  com.winmore.utils.Log - 🚀 Starting Scenario Execution...
+2026-05-14 11:28:02 [main] INFO  com.winmore.utils.Log - 🌍 Launching Winmore app on environment [qaprod] at: https://login-qa.lanetix.com
+2026-05-14 11:28:09 [main] INFO  com.winmore.utils.Log - ✅ Application URL launched successfully.
+2026-05-14 11:28:11 [main] INFO  com.winmore.utils.Log - ✅ Verified presence of login screen successfully.
+2026-05-14 11:28:11 [main] INFO  com.winmore.utils.Log - 🏁 Scenario Execution Finished.
+2026-05-14 11:28:11 [main] INFO  com.winmore.utils.Log - 🚀 Starting Scenario Execution...
+2026-05-14 11:28:12 [main] INFO  com.winmore.utils.Log - User entered the login credentials successfully.
+2026-05-14 11:28:19 [main] INFO  com.winmore.utils.Log - ✅ Verified the selection of organization successfully.
+2026-05-14 11:28:36 [main] INFO  com.winmore.utils.Log - ✅ Login is successful in the application
+2026-05-14 11:28:36 [main] INFO  com.winmore.utils.Log - 🏁 Scenario Execution Finished.
+2026-05-14 11:28:36 [main] INFO  com.winmore.utils.Log - 🚀 Starting Scenario Execution...
+2026-05-14 11:28:40 [main] INFO  com.winmore.utils.Log - ✅ User clicked on browse successfully
+2026-05-14 11:28:40 [main] INFO  com.winmore.utils.Log - ✅ User navigated to Bids option successfully
+2026-05-14 11:28:41 [main] INFO  com.winmore.utils.Log - ✅ User searched for a record: Rate AI Task Shipper Adhoc Column testing
+2026-05-14 11:28:43 [main] INFO  com.winmore.utils.Log - ✅ User verified the record search result for: Rate AI Task Shipper Adhoc Column testing
+2026-05-14 11:28:43 [main] INFO  com.winmore.utils.Log - ✅ User selected the record from search result
+2026-05-14 11:28:43 [main] INFO  com.winmore.utils.Log - 🏁 Scenario Execution Finished.
+2026-05-14 11:28:43 [main] INFO  com.winmore.utils.Log - 🚀 Starting Scenario Execution...
+2026-05-14 11:28:50 [main] INFO  com.winmore.utils.Log - ✅ User clicked on task 'RateAI Adhoc' from task list successfully
+2026-05-14 11:28:56 [main] INFO  com.winmore.utils.Log - ✅ User successfully verified that the selected task ' RateAI Adhoc ' is opened
+2026-05-14 11:28:56 [main] INFO  com.winmore.utils.Log - 🏁 Scenario Execution Finished.
+2026-05-14 11:28:56 [main] INFO  com.winmore.utils.Log - 🚀 Starting Scenario Execution...
+2026-05-14 11:28:56 [main] INFO  com.winmore.utils.Log - ✅ Clicked PI table 'PI table _Expand' button successfully
+2026-05-14 11:29:00 [main] INFO  com.winmore.utils.Log - ✅ Verified that the PI table is showing the column 'Origin Hours Edited value from Pricing Modal' successfully
+2026-05-14 11:29:00 [main] INFO  com.winmore.utils.Log - 🏁 Scenario Execution Finished.
+2026-05-14 11:29:00 [main] INFO  com.winmore.utils.Log - 🚀 Starting Scenario Execution...
+2026-05-14 11:29:00 [main] INFO  com.winmore.utils.Log - <<<< The PI table is getting loaded >>>>
+2026-05-14 11:29:00 [main] INFO  com.winmore.utils.Log - ✅ Verified imported data row count from PI table for 'Lowes_Mini_Example' successfully
+2026-05-14 11:29:01 [main] INFO  com.winmore.utils.Log - ✅ Clicked PI table 'PI Table Export Excel' button successfully
+2026-05-14 11:29:01 [main] INFO  com.winmore.utils.Log - File name is been successfully updated as tl_pricing_bid_set
+2026-05-14 11:29:11 [main] INFO  com.winmore.utils.Log - ✅ Download saved to: C:\Users\UjwalKumar\Documents\QE_Playwright_Automation_Suite\src\test\resources\DownloadedFiles\tl_pricing_bid_set.xlsx
+2026-05-14 11:29:11 [main] INFO  com.winmore.utils.Log - ✅ Triggered and saved download for 'PI Table Export Excel Download'
+2026-05-14 11:29:21 [main] INFO  com.winmore.utils.Log - ✅ PI Table file generated successfully
+2026-05-14 11:29:22 [main] INFO  com.winmore.utils.Log - ✅ Clicked PI table 'Download Modal Close' button successfully
+2026-05-14 11:29:22 [main] INFO  com.winmore.utils.Log - ✅ Verified that the file 'tl_pricing_bid_set.xlsx/tl_pricing' was downloaded successfully
+2026-05-14 11:29:22 [main] INFO  com.winmore.utils.Log - 🏁 Scenario Execution Finished.
+2026-05-14 11:29:22 [main] INFO  com.winmore.utils.Log - 🚀 Starting Scenario Execution...
+2026-05-14 11:29:24 [main] INFO  com.winmore.utils.Log - 📄 Read cell [row=0, col=5] = 'Origin Hours' from file: tl_pricing_bid_set.xlsx
+2026-05-14 11:29:24 [main] INFO  com.winmore.utils.Log - ✅ Column 'Origin Hours' verified successfully in file 'tl_pricing_bid_set'
+2026-05-14 11:29:24 [main] INFO  com.winmore.utils.Log - 📄 Read cell [row=0, col=6] = 'adhoc dest hour' from file: tl_pricing_bid_set.xlsx
+2026-05-14 11:29:24 [main] INFO  com.winmore.utils.Log - ✅ Column 'adhoc dest hour' verified successfully in file 'tl_pricing_bid_set'
+2026-05-14 11:29:24 [main] INFO  com.winmore.utils.Log - ✅ Deleted latest file from directory for 'tl_pricing_bid_set.xlsx': tl_pricing_bid_set.xlsx
+2026-05-14 11:29:24 [main] INFO  com.winmore.utils.Log - 🏁 Scenario Execution Finished.
+2026-05-14 11:29:24 [main] INFO  com.winmore.utils.Log - 🚀 Starting Scenario Execution...
+2026-05-14 11:29:25 [main] INFO  com.winmore.utils.Log - ✅ Clicked PI table 'PI table _Close' button successfully
+2026-05-14 11:29:25 [main] INFO  com.winmore.utils.Log - ✅ Clicked PI table 'Submission Action' button successfully
+2026-05-14 11:29:25 [main] INFO  com.winmore.utils.Log - 🏁 Scenario Execution Finished.

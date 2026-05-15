@@ -82,10 +82,10 @@ public class HomePage {
     public String BrowseComponentRecordList = "//div[@class='client-apps-browse-containers-__content-module__items']";
     public String BrowseComponentRecordList_description = "The container for a list of records in the browse component.";
 
-    public String FilteringConditions_SelectControllingSearchField = "//div[@class='-u-form-group -u-form-group--block']//div[@class='-u-form-group -u-form-group--block']//input[@placeholder='Search']";
+    public String FilteringConditions_SelectControllingSearchField = "//input[@placeholder='Search']";
     public String FilteringConditions_SelectControllingSearchField_description = "A search input field for selecting a controlling field.";
 
-    public String BrowseComponentRecordSearchResult = "//div[@class='client-apps-browse-components-records-__list-item-module__title']/div";
+    public String BrowseComponentRecordSearchResult = "(//div[@class='client-apps-browse-components-records-__list-item-module__title']/div)[1]";
     public String BrowseComponentRecordSearchResult_description = "A container for the title of a record search result in the browse component.";
 
 }

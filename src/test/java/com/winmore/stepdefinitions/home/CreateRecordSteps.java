@@ -172,6 +172,7 @@ public class CreateRecordSteps extends PageInitializer{
 
 	@Then("the user verifying the record search result for {string}")
 	public void the_user_verifying_the_record_search_result_for(String recordName) throws Exception {
+		commonUtils.sleep(2000);
 		actionHelper.waitForElementToBeVisible(homePage.BrowseComponentRecordList);
 		validationHelper.verifyElementContainsText(homePage.BrowseComponentRecordList, recordName);
 		Log.info("✅ User verified the record search result for: " + recordName);

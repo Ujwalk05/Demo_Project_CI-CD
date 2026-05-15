@@ -37,7 +37,7 @@ public class ShipperFileImport extends PageInitializer{
 	            locator = Shipperimportpage.priceImport;
 	            break;
 	        case "proceed":
-	            locator = Shipperimportpage.proceImportProceed;
+	            locator = Shipperimportpage.proceedImportProceed;
 	            break;
 	        case "closesubmissionbutton":
 	            locator = Shipperimportpage.closeSubmissionButton;

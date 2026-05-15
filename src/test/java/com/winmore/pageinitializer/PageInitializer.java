@@ -1,5 +1,6 @@
 package com.winmore.pageinitializer;
 
+import com.winmore.ExcelUtility.ExcelReader;
 import com.winmore.actions.ClickActionHelper;
 import com.winmore.actions.FileUploadHelper;
 import com.winmore.actions.InputActionHelper;
@@ -14,10 +15,12 @@ import com.winmore.pages.InitialMappingPage;
 import com.winmore.pages.LoginPage;
 import com.winmore.pages.MappingReviewPage;
 import com.winmore.pages.ShipperFileImportpage;
+import com.winmore.pages.SubmissionPage;
 import com.winmore.pages.QuickCreatePage;
 import com.winmore.pages.PriceInspectorPage;
 import com.winmore.pages.WorkFlowPage;
 import com.winmore.testhelper.MLCasesHelp;
+import com.winmore.testhelper.TestcaseHelper;
 import com.winmore.testingdata.PropertyDataHandler;
 import com.winmore.utils.CommonUtils;
 import com.winmore.utils.TestEnvironmentData;
@@ -52,12 +55,18 @@ public class PageInitializer {
 	public static AdjustUnMappedPage adjustUnMappedPage;
 	public static MappingReviewPage mappingReviewPage;
 	public static PriceInspectorPage priceInspectorPage;
+	public static ExcelReader excelreader;
+	public static SubmissionPage submissionpage;
     
     // CommonUtils
     public static CommonUtils commonUtils;
 
 	//Constants
 	public static TestBase testBase;
+
+
+	//TestCaseHelpers
+	public static TestcaseHelper testcasehelper;
 
 
 
@@ -79,11 +88,14 @@ public class PageInitializer {
 		testBase = new TestBase();
 		workFlowPage = new WorkFlowPage();
 		initialMappingPage = new InitialMappingPage();
-	 	//mlCasesHelp = new MLCasesHelp();
+	 //	mlCasesHelp = new MLCasesHelp();
 	    autoMappingPage = new AutoMappingPage();
 	    adjustUnMappedPage = new AdjustUnMappedPage();
 		mappingReviewPage = new MappingReviewPage();
         priceInspectorPage = new PriceInspectorPage();
+		//excelreader = new ExcelReader();
+		submissionpage = new SubmissionPage();
+		testcasehelper = new TestcaseHelper();
 
 	}
 

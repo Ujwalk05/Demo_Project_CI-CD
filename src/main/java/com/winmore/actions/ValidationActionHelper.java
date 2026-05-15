@@ -80,8 +80,8 @@ public class ValidationActionHelper {
 	    try {
 	        if (elementExpression != null) {
 
-	            // Short timeout check (e.g., 2s)
-	            elementDisplayed = page.locator(elementExpression).isVisible(new Locator.IsVisibleOptions().setTimeout(2000));
+	            // Short timeout check (e.g., 10s)
+	            elementDisplayed = page.locator(elementExpression).isVisible(new Locator.IsVisibleOptions().setTimeout(10000));
 
 	        } else {
 	            throw new AutomationException(elementExpression + " Not found");

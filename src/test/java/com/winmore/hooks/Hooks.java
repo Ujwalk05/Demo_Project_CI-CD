@@ -3,6 +3,8 @@ package com.winmore.hooks;
 
 
 import java.nio.file.Paths;
+
+import com.winmore.pageinitializer.PageInitializer;
 import com.winmore.testactions.TestSummary;
 import com.winmore.utils.Log;
 import com.microsoft.playwright.Page;
@@ -133,17 +135,30 @@ public class Hooks {
 
 	static int cnt =0;
 	
-	@BeforeAll
-    public static void beforeAllTests() {
-        try {
-            PlaywrightDriver.setupDriver();
-            System.out.println("✅ Browser launched successfully.");
-            Log.info("✅ Browser launched successfully.");
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
+	// @BeforeAll
+    // public static void beforeAllTests() {
+    //     try {
+    //         PlaywrightDriver.setupDriver();
+    //         System.out.println("✅ Browser launched successfully.");
+    //         Log.info("✅ Browser launched successfully.");
+    //     } catch (Exception e) {
+    //         e.printStackTrace();
+    //     }
+    // }
 
+
+	@BeforeAll
+public static void beforeAllTests() {
+    try {
+        PlaywrightDriver.setupDriver();
+        // Initialize all static PageInitializer fields once here
+        new PageInitializer();
+        System.out.println("✅ Browser launched successfully.");
+        Log.info("✅ Browser launched successfully.");
+    } catch (Exception e) {
+        e.printStackTrace();
+    }
+}
     // This hook is for scenario-level actions, not for browser setup/teardown
     @Before
     public void setUp(Scenario scenario) {

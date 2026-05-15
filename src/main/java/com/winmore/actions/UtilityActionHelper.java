@@ -72,7 +72,9 @@ public class UtilityActionHelper {
 	}
 public void clearText(String locator) {
     try {
-        page.fill(locator, ""); // Fill the input field with an empty string to clear it
+        page.locator(locator).click();
+        page.locator(locator).press("Control+A");
+        page.locator(locator).press("Backspace");
         System.out.println("✅ Cleared text in element: " + locator);
     } catch (Exception e) {
         System.err.println("❌ Error clearing text in element: " + locator + " - " + e.getMessage());
@@ -90,8 +92,8 @@ public void typeText(String locator, String text) {
 }
     public void TypeTextandPressEnter(String locator, String text) {
         try {
-            page.fill(locator, text); // Fill the input field with the specified text
-            page.keyboard().press("Enter"); // Press Enter key
+            page.locator(locator).fill(text);
+            page.locator(locator).press("Enter");
             System.out.println("✅ Typed text '" + text + "' and pressed Enter in element: " + locator);
         } catch (Exception e) {
             System.err.println("❌ Error typing text and pressing Enter in element: " + locator + " - " + e.getMessage());

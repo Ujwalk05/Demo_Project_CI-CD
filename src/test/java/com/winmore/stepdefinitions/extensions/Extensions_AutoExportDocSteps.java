@@ -34,11 +34,6 @@ public class Extensions_AutoExportDocSteps extends PageInitializer{
 	    
 	}
 
-	@Given("the user clicking on the button {string}")
-	public void the_user_clicking_on_the_button(String string) {
-	    
-	}
-
 	@Given("the user updating value in the field {string} as {string}")
 	public void the_user_updating_value_in_the_field_as(String string, String string2) {
 	    
@@ -71,11 +66,6 @@ public class Extensions_AutoExportDocSteps extends PageInitializer{
 
 	@Given("the user verifying the {string} from Conversation screen")
 	public void the_user_verifying_the_from_conversation_screen(String string) {
-	    
-	}
-
-	@Given("the user deleting {string} file from directory")
-	public void the_user_deleting_file_from_directory(String string) {
 	    
 	}
 
