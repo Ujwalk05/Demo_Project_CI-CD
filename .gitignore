@@ -16,3 +16,4 @@ Reports/
 
 
 "target/" 
+"src/main/resources/config.properties" 
