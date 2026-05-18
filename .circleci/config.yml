@@ -19,6 +19,11 @@ jobs:
       - checkout
 
       - run:
+          name: Inject secrets into config
+          command: |
+            sed -i "s|openai.api.key=|openai.api.key=${OPENAI_API_KEY}|g" src/main/resources/config.properties
+
+      - run:
           name: Install Maven
           command: |
             wget https://archive.apache.org/dist/maven/maven-3/3.9.6/binaries/apache-maven-3.9.6-bin.tar.gz
